@@ -1,0 +1,154 @@
+.home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    gap: 5px;
+    padding: 50px 0px;
+}
+
+.card-home{
+    margin-top: -2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 77vh;
+    background-color: rgba(146, 140, 133, 0.267);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.info-card-home{
+    margin: 5px;
+    width: 90%;
+}
+
+.card-home > img{
+    margin-top: 15px;
+    width: 30%;
+    border-left: 5px solid #8400BD;
+    border-radius: 5px;
+}
+
+.info-card-home h1{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.info-card-home p{
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.info-card-home p > span{
+    font-weight: bold;
+    color: #8400BD;
+}
+
+.botoes-home{
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.botoes-home a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #8400BD;
+    text-decoration-line: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-radius: 3px 3px 0px 0px;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s ease-out;
+}
+
+.botoes-home a:hover{
+    color: rgba(0, 0, 0, 0.774);
+    border-bottom: 3px solid #ffffffbb;
+    background-color: #8400BD;
+}
+
+.botoes-home > a > img{
+    width: 25px;
+}
+
+/*Formação*/
+
+.formacao{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+#tituloForm{
+    text-transform: uppercase;
+    font-size: 20px;
+    border-right: 2px solid #8400BD;
+    padding-right: 5px;
+    animation: none;
+}
+
+#forms{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 60%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+.forms{
+    border-left: 3px solid #8400BD;
+    margin-left: 5px;
+    margin: 50px 0px;
+}
+
+.forms h1{
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    width: 250px;
+}
+
+.forms h2{
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.andamento{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.andamento p{
+    color: #8400BD;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.andamento span{
+    color: #5c0481c9;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.andamento img{
+    width: 20px;
+    margin-left: 5px;
+}
