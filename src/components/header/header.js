@@ -9,9 +9,8 @@ function Header(){
             <button className="btn"><img src={process.env.PUBLIC_URL + "/assets/img/menu-deep.svg"} alt="Menu"/></button>
             <nav id="nav">
                 <Link to="/">Home<hr/></Link>
-                <a href="#formacao">Formação<hr/></a>
-                <a href="#exp">Tecnologias<hr/></a>
                 <Link to="/projetos">Projetos<hr/></Link>
+                <Link to="contatos">Contatos<hr/></Link>
             </nav>
         </header>
         
