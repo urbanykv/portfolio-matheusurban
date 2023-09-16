@@ -8,7 +8,7 @@ function Header(){
             <img src={process.env.PUBLIC_URL + "/assets/img/logo-matheus-urban.png"} className="logo" alt="Logo Matheus Urban"/>
             <button className="btn"><img src={process.env.PUBLIC_URL + "/assets/img/menu-deep.svg"} alt="Menu"/></button>
             <nav id="nav">
-                <Link to="/">Home<hr/></Link>
+                <Link to={`/${}`}>Home<hr/></Link>
                 <Link to="/projetos">Projetos<hr/></Link>
                 <Link to="contatos">Contatos<hr/></Link>
             </nav>
@@ -20,11 +20,11 @@ function Header(){
 export default Header
 
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
     const header = document.querySelector('#header')
     if(window.scrollY !== 0){
-        header.style.boxShadow = '1px 2px 7px rgba(0, 0, 0, 0.61)'
+        header.style.backgroundColor = 'rgb(34, 34, 34)'
     }else{
-        header.style.boxShadow = '1px 2px 7px rgba(0, 0, 0, 0)'
+        header.style.backgroundColor = 'transparent'
     }
 })

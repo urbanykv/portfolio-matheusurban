@@ -1,14 +1,8 @@
 import React from "react";
 import './projetos.css'
+import { CardProjetos } from "../projetos-card/projetosCard";
 
 function Projetos(){
-
-    const projetosDev = [
-        {id: '1', projeto: 'Consultar CEP', image: 'assets/img/consulta-cep.png'},
-        {id: '1', projeto: 'Consultar CEP', image: 'assets/img/consulta-cep.png'},
-        {id: '1', projeto: 'Consultar CEP', image: 'assets/img/consulta-cep.png'},
-        {id: '1', projeto: 'Consultar CEP', image: 'assets/img/consulta-cep.png'}
-    ]
 
     return(
         <div className="projetos-pag">
@@ -19,7 +13,7 @@ function Projetos(){
                         <button onClick='' id="btnDesign">Design Gráfico</button>
                     </nav>
                     <div className="projetos-dev">
-                    
+                        <CardProjetos/>
                     </div>
                     <div className="projetos-design">
                     </div>

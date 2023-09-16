@@ -4,13 +4,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    padding: 80px 0px;
+    background-color: #222222;
+    padding: 175px 0px;
 }
 
 .projetos{
     width: 100%;
-    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +20,18 @@
 #tituloProjetos{
     text-transform: uppercase;
     font-size: 18px;
-    border-right: 2px solid #8400BD;
+    border-right: 2px solid #ff0000;
     padding-right: 7px;
-    animation: none;
+    color: aliceblue;
 }
 
-.imgSlider{
-    width: 350px;
+.projetos-dev{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }

@@ -4,10 +4,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
-    gap: 5px;
-    padding: 50px 0px;
 }
+
+/*Home*/
 
 .home{
     width: 100%;
@@ -15,7 +14,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: white;
+    background-image: url(../../../public/assets/img/background-home.jpg);
+    background-position: center;
+    background-size: cover;
     gap: 5px;
     padding: 50px 0px;
 }
@@ -27,10 +28,7 @@
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 77vh;
-    background-color: rgba(146, 140, 133, 0.267);
-    border-radius: 15px;
-    padding: 15px;
+    height: 90vh;
 }
 
 .info-card-home{
@@ -38,26 +36,20 @@
     width: 90%;
 }
 
-.card-home > img{
-    margin-top: 15px;
-    width: 30%;
-    border-left: 5px solid #8400BD;
-    border-radius: 5px;
-}
-
 .info-card-home h1{
-    font-size: 22px;
+    font-size: 45px;
     margin-top: 10px;
+    color: rgb(231, 244, 255);
 }
 
 .info-card-home p{
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 15px;
+    color: rgb(231, 244, 255);
 }
 
 .info-card-home p > span{
-    font-weight: bold;
-    color: #8400BD;
+    color: #ff0000;
 }
 
 .botoes-home{
@@ -72,20 +64,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 3px solid #8400BD;
+    border-bottom: 3px solid #ff00009f;
     text-decoration-line: none;
-    color: black;
+    color: rgb(255, 255, 255);
     background-color: rgba(0, 0, 0, 0.075);
     border-radius: 3px 3px 0px 0px;
-    width: 40px;
+    width: 120px;
     height: 40px;
     transition: 0.5s ease-out;
+    gap: 15px;
+}
+
+#whatsapp-btn{
+    width: 40px;
 }
 
 .botoes-home a:hover{
-    color: rgba(0, 0, 0, 0.774);
     border-bottom: 3px solid #ffffffbb;
-    background-color: #8400BD;
+    background-color: #ff00009f;
 }
 
 .botoes-home > a > img{
@@ -101,14 +97,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom, #121315, rgb(34, 34, 34));
 }
 
 #tituloForm{
     text-transform: uppercase;
     font-size: 18px;
-    border-right: 2px solid #8400BD;
+    border-right: 2px solid #ff0000;
     padding-right: 7px;
-    animation: none;
+    color: aliceblue;
 }
 
 #forms{
@@ -122,7 +119,7 @@
 }
 
 .forms{
-    border-left: 3px solid #8400BD;
+    border-left: 3px solid #ff0000;
     margin-left: 5px;
 }
 
@@ -131,12 +128,14 @@
     font-weight: normal;
     font-size: 18px;
     width: 250px;
+    color: aliceblue;
 }
 
 .forms h2{
     padding-left: 10px;
     font-weight: normal;
     font-size: 16px;
+    color: aliceblue;
 }
 
 .andamento{
@@ -147,13 +146,13 @@
 }
 
 .andamento p{
-    color: #8400BD;
+    color: #ff0000;
     font-weight: bold;
     font-size: 16px;
 }
 
 .andamento span{
-    color: #5c0481c9;
+    color: #ff0000c2;
     font-weight: bold;
     font-size: 16px;
 }
@@ -163,124 +162,22 @@
     margin-left: 5px;
 }
 
-.tecnologias{
+/*Projeto Destaque*/
+
+.projeto-destaque{
     width: 100%;
     height: 400px;
-    padding: 15px 0px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 15px;
+    background-color: rgb(34, 34, 34);
 }
 
-#tituloTec{
+#tituloPD{
     text-transform: uppercase;
     font-size: 18px;
-    border-right: 2px solid #8400BD;
+    border-right: 2px solid #ff0000;
     padding-right: 7px;
-    animation: none;
-}
-
-.container-tecs{
-    width: 70%;
-    padding: 15px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.tecs{
-    width: 120px;
-}
-
-#html{
-    background-image: url(../../../public/assets/img/logo-html-hover.svg);
-    background-position: center;
-    background-size: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#html img{
-    transition: 0.5s ease-in-out;
-}
-
-#html img:hover{
-    opacity: 0%;
-}
-
-
-#css{
-    background-image: url(../../../public/assets/img/logo-css-hover.svg);
-    background-position: center;
-    background-size: 140px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#css img{
-    width: 139px;  
-    object-fit: cover;
-    object-position: center;
-    transition: 0.5s ease-in-out;
-}
-
-#css img:hover{
-    opacity: 0%;
-}
-
-#js{
-    background-image: url(../../../public/assets/img/logo-js-hover.svg);
-    background-position: center;
-    background-size: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#js img{
-    transition: 0.5s ease-in-out;
-}
-
-#js img:hover{
-    opacity: 0%;
-}
-
-#git{
-    background-image: url(../../../public/assets/img/logo-git-hover.svg);
-    background-position: center;
-    background-size: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#git img{
-    transition: 0.5s ease-in-out;
-}
-
-#git img:hover{
-    opacity: 0%;
-}
-
-#react{
-    background-image: url(../../../public/assets/img/logo-react-hover.svg);
-    background-position: center;
-    background-size: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#react img{
-    transition: 0.5s ease-in-out;
-}
-
-#react img:hover{
-    opacity: 0%;
+    color: aliceblue;
 }
