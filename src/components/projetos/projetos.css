@@ -1,20 +1,20 @@
 .projetos-pag{
+    margin-top: 100px;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #222222;
-    padding: 175px 0px;
 }
 
 .projetos{
     width: 100%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 #tituloProjetos{
@@ -27,11 +27,236 @@
 
 .projetos-dev{
     width: 80%;
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
+}
+
+.alerta::after{
+    content: '(Passe o mouse para mais Informações.)';
+    display: flex;
+    color: white;
+}
+
+.botoesAlterarProjetos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+#btnFront, #btnDesign, #btn-ver-mais{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration-line: none;
+}
+
+#btnFront > hr, #btnDesign > hr, #btn-ver-mais > hr{
+    width: 0px;
+    height: 2px;
+    border-radius: 55px;
+    border: none;
+    transition: 0.5s ease-in-out;
+    background-color: #ff0000;
+    opacity: 40%;
+    margin-top: 2.5px;
+}
+
+#btnFront:hover hr, #btnDesign:hover hr, #btn-ver-mais:hover  hr{
+    background-color: #ff0000;
+    width: 97%;
+    opacity: 100%;
+}
+
+#btn-ver-mais{
+    margin: 0px 0px 50px 0px;
+}
+
+@media (max-width: 805px) and (min-width: 536px) {
+    .projetos-pag{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222222;
+    }
+    
+    .projetos{
+        width: 100%;
+        margin: 180px 0px !important; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: #222222;
+    }
+    
+    #tituloProjetos{
+        text-transform: uppercase;
+        font-size: 18px;
+        border-right: 2px solid #ff0000;
+        padding-right: 7px;
+        color: aliceblue;
+    }
+    
+    .projetos-dev{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .alerta::after{
+        content: '(Clique para mais Informações.)';
+        display: flex;
+        color: white;
+        font-size: 14px;
+    }
+    
+    .botoesAlterarProjetos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    #btnFront, #btnDesign, #btn-ver-mais{
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration-line: none;
+    }
+    
+    #btnFront > hr, #btnDesign > hr, #btn-ver-mais > hr{
+        width: 0px;
+        height: 2px;
+        border-radius: 55px;
+        border: none;
+        transition: 0.5s ease-in-out;
+        background-color: #ff0000;
+        opacity: 40%;
+        margin-top: 2.5px;
+    }
+    
+    #btnFront:hover hr, #btnDesign:hover hr, #btn-ver-mais:hover  hr{
+        background-color: #ff0000;
+        width: 97%;
+        opacity: 100%;
+    }
+    
+    #btn-ver-mais{
+        margin: 0px 0px 50px 0px;
+    }
+}
+
+@media (max-width: 535px) {
+    .projetos-pag{
+        padding: 0px 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #222222;
+    }
+    
+    .projetos{
+        width: 100%;
+        margin: 350px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        background-color: #222222;
+    }
+    
+    #tituloProjetos{
+        text-transform: uppercase;
+        font-size: 18px;
+        border-right: 2px solid #ff0000;
+        padding-right: 7px;
+        color: aliceblue;
+    }
+    
+    .projetos-dev{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .alerta::after{
+        content: '(Toque para mais Informações.)';
+        display: flex;
+        color: white;
+        font-size: 14px;
+    }
+    
+    .botoesAlterarProjetos{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    #btnFront, #btnDesign, #btn-ver-mais{
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        color: white;
+        font-size: 13px;
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-decoration-line: none;
+    }
+    
+    #btnFront > hr, #btnDesign > hr, #btn-ver-mais > hr{
+        width: 0px;
+        height: 2px;
+        border-radius: 55px;
+        border: none;
+        transition: 0.5s ease-in-out;
+        background-color: #ff0000;
+        opacity: 40%;
+        margin-top: 2.5px;
+    }
+    
+    #btnFront:hover hr, #btnDesign:hover hr, #btn-ver-mais:hover  hr{
+        background-color: #ff0000;
+        width: 97%;
+        opacity: 100%;
+    }
+    
+    #btn-ver-mais{
+        margin: 0px 0px 50px 0px;
+    }
 }

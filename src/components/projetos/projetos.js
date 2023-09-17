@@ -9,9 +9,13 @@ function Projetos(){
             <section className="projetos">
                     <h1 id="tituloProjetos">Projetos</h1>
                     <nav className="botoesAlterarProjetos">
-                        <button onClick='' id="btnFront">Desenvolvimento Front-end</button>
-                        <button onClick='' id="btnDesign">Design Gráfico</button>
-                    </nav>
+                        <div id="botaoF">
+                            <button onClick='' id="btnFront">Desenvolvimento Front-end<hr/></button>
+                        </div>
+                        <div id="botaoD">
+                            <button onClick='' id="btnDesign">Design Gráfico<hr/></button>
+                        </div>
+                    </nav>                        <span className="alerta"></span>
                     <div className="projetos-dev">
                         <CardProjetos/>
                     </div>

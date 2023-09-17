@@ -1,8 +1,14 @@
 import React from "react";
 import './home.css'
 import { Link } from "react-router-dom";
+import { projetosDev } from "../projetos-card/projetosCard";
+
+
 
 function Home() {
+
+    const projetoDevPrincipal = projetosDev[0]
+
     return (
         <div className="home-pag">
             <section className="home" id="home">
@@ -33,12 +39,19 @@ function Home() {
                 </div>
             </section>
             <section className="projeto-destaque">
-                <div>
-                    <h1 id="tituloPD">Projeto Destaque</h1>
-
-                    
+                <h1 id="tituloProjetos">Projeto em Destaque</h1>
+                <div className="pd">
+                {
+                    <div style={{backgroundImage: `url(${projetoDevPrincipal.image})`}} className="cardDestaque" key={projetoDevPrincipal.id}>
+                        <img src="assets/img/opacidade.png"/>
+                        <h1 id="tituloCard">{projetoDevPrincipal.nome}</h1>
+                        <p className="tecnologiasProjetos">{projetoDevPrincipal.tecnologias}</p>
+                        <a href={projetoDevPrincipal.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>
+                        <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>
+                    </div>
+                }
                 </div> 
-                <Link to="/projetos">Ver mais projetos</Link>
+                <Link to="/projetos" id="btn-ver-mais">Ver mais projetos<hr/></Link>
             </section>
         </div>
     )
