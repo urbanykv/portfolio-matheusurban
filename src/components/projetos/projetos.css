@@ -191,6 +191,7 @@
         align-items: center;
         gap: 40px;
         background-color: #222222;
+        animation: none;
     }
     
     #tituloProjetos{
