@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './home.css'
 import { Link } from "react-router-dom";
 import { projetosDev } from "../projetos-card/projetosCard";
@@ -6,6 +6,14 @@ import { projetosDev } from "../projetos-card/projetosCard";
 function Home() {
 
     const projetoDevPrincipal = projetosDev[0]
+
+    let [topo, setTopo] = useState(undefined);
+
+    function iniciarNoTopo(){
+        topo = window.scrollTo({top: 0});
+    
+        setTopo(topo);
+    }
 
     return (
         <div className="home-pag">
@@ -49,7 +57,7 @@ function Home() {
                     </div>
                 }
                 </div> 
-                <Link to="/projetos" id="btn-ver-mais">Ver mais projetos<hr/></Link>
+                <Link to="/projetos" id="btn-ver-mais" onClick={iniciarNoTopo}>Ver mais projetos<hr/></Link>
             </section>
         </div>
     )
