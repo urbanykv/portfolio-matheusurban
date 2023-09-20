@@ -1,3 +1,14 @@
+@keyframes animacao-contatos{
+    0%{
+        opacity: 0;
+        filter: blur(15px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
 .contatos{
     width: 100%;
     height: 100vh;
@@ -6,7 +17,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
-
+    animation: animacao-contatos both 0.9s ease;
 }
 
 #tituloContatos{
@@ -80,7 +91,7 @@
     background-color: transparent;
     border: 2px solid #ff0000;
     width: 20vw;
-    padding: 5px 15px;
+    padding: 10px 15px;
     color: white;
     border-radius: 7px;
 }
@@ -88,7 +99,7 @@
 #mensagem{
     background-color: transparent;
     border: 2px solid #ff0000;
-    padding: 5px 15px;
+    padding: 15px 15px;
     color: white;
     border-radius: 7px;
     max-height: 20vh;
@@ -110,17 +121,30 @@
 
 #label-nome{
     left: 20px;
-    top: -11px;
+    top: -12px;
 }
 
 #label-email{
     left: 20px;
-    top:  35px;
+    top:  45px;
 }
 
 #label-msg{
     left: 20px;
-    top: 80px;
+    top: 100px;
+}
+
+.formEmail button{
+    background-color: #ff0000;
+    color: white;
+    padding: 7px;
+    width: 150px;
+    border-radius: 7px;
+    border: 2px solid rgb(184, 0, 0);
+    cursor: pointer;
+}
+.formEmail button:hover{
+    background-color: rgb(235, 0, 0);
 }
 
 @media (max-width: 805px){
@@ -260,4 +284,8 @@
         top: 80px;
     }
     
+    .formEmail button{
+        background-color: #ff0000;
+    }
+
 }

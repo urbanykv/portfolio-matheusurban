@@ -12,7 +12,7 @@ function Home() {
             <section className="home" id="home">
                 
                 <div className="card-home">
-                    <div class="info-card-home">
+                    <div className="info-card-home">
                         <h1>Desenvolvedor Front-end & Designer Gráfico.</h1>
                         <p>Eu sou o <span>Matheus Urban</span>, tenho 21 anos, sou Desenvolvedor Front-end e Designer gráfico. Trabalho com <span>HTML, CSS, JavaScript, React.js e Photoshop</span> para criar interfaces atrativas e interativas.</p>
                     </div>
@@ -38,7 +38,7 @@ function Home() {
                 </div>
             </section>
             <section className="projeto-destaque">
-                <h1 id="tituloProjetos">Projeto em Destaque</h1>
+                <h1 id="tituloPD">Projeto em Destaque</h1>
                 <div className="pd">
                 {
                     <div style={{backgroundImage: `url(${projetoDevPrincipal.image})`}} className="cardDestaque" key={projetoDevPrincipal.id}>

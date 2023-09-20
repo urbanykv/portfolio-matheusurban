@@ -1,3 +1,16 @@
+@keyframes animacao-projetos{
+    0%{
+        transform: translateY(-30%);
+        opacity: 0;
+        filter: blur(15px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
 .projetos-pag{
     margin-top: 100px;
     width: 100%;
@@ -15,6 +28,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+    animation: animacao-projetos both 0.8s ease;
 }
 
 #tituloProjetos{
