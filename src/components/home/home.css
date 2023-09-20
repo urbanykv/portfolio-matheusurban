@@ -253,6 +253,7 @@
         align-items: center;
         width: 80%;
         height: 90vh;
+        animation: none;
     }
     
     .info-card-home{
@@ -331,6 +332,7 @@
         border-right: 2px solid #ff0000;
         padding-right: 7px;
         color: #f0f8ff;
+        animation: none;
     }
     
     #forms{
@@ -340,6 +342,7 @@
         height: 60%;
         justify-content: space-evenly;
         align-items: center;
+        animation: none;
     }
     
     .forms{
@@ -405,6 +408,7 @@
         border-right: 2px solid #ff0000;
         padding-right: 7px;
         color: aliceblue;
+        animation: none;
     }
 
     .pd::before{
@@ -412,6 +416,7 @@
         display: flex;
         color: white;
         font-size: 14px;
+        animation: none;
     }
     
     .pd{
@@ -421,6 +426,7 @@
         height: 100vh;
         justify-content: space-evenly;
         align-items: center;
+        animation: none;
     }
 
 

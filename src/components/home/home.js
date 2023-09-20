@@ -10,7 +10,6 @@ function Home() {
     return (
         <div className="home-pag">
             <section className="home" id="home">
-                
                 <div className="card-home">
                     <div className="info-card-home">
                         <h1>Desenvolvedor Front-end & Designer Gráfico.</h1>
