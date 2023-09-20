@@ -1,6 +1,6 @@
 ## Portfólio Matheus Urban
 
 <div>
-    <h2>Primeira aplicação em React.js!</h2>
+    <p style="color: red;">Primeira aplicação em React.js!</p>
     <p>espero que tenha gostado.</p>
 </div>
