@@ -75,7 +75,7 @@
 .cardDestaque > .btn-projetos{
     padding: 3px 0px;
     display: inline;
-    width: 9%;
+    width: 80px;
     color: white;
     opacity: 0;
     transition: 0.5s ease;
@@ -86,7 +86,7 @@
 }
 
 .cardDestaque > #demo{
-    width: 6%;
+    width: 55px;
 }
 
 .btn-projetos{
@@ -111,7 +111,7 @@
     .cardDestaque >.btn-projetos{
         padding: 3px 0px;
         display: inline;
-        width: 40%;
+        width: 80px;
         color: white;
         opacity: 0;
         transition: 0.5s ease;
@@ -123,6 +123,6 @@
     
     
     .cardDestaque > #demo{
-        width: 27%;
+        width: 55px;
     }
 }

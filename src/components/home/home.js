@@ -3,8 +3,6 @@ import './home.css'
 import { Link } from "react-router-dom";
 import { projetosDev } from "../projetos-card/projetosCard";
 
-
-
 function Home() {
 
     const projetoDevPrincipal = projetosDev[0]
@@ -12,10 +10,11 @@ function Home() {
     return (
         <div className="home-pag">
             <section className="home" id="home">
+                
                 <div className="card-home">
                     <div class="info-card-home">
                         <h1>Desenvolvedor Front-end & Designer Gráfico.</h1>
-                        <p>Eu sou o <span>Matheus Urban</span>, tenho 21 anos, sou Desenvolvedor Front-End e Designer gráfico. Trabalho com <span>HTML, CSS, JavaScript, React.js e Photoshop</span> para criar interfaces atrativas e interativas.</p>
+                        <p>Eu sou o <span>Matheus Urban</span>, tenho 21 anos, sou Desenvolvedor Front-end e Designer gráfico. Trabalho com <span>HTML, CSS, JavaScript, React.js e Photoshop</span> para criar interfaces atrativas e interativas.</p>
                     </div>
                     <div className="botoes-home">
                         <a href="https://www.linkedin.com/in/urbanykv" target="_blank"><img src={process.env.PUBLIC_URL + "assets/img/linkedin-logo-dark.png"} alt="Logo LinkedIn" /> <p>LinkedIn</p></a>

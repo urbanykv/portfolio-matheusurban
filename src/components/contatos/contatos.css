@@ -5,13 +5,62 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
+
+}
+
+#tituloContatos{
+    text-transform: uppercase;
+    font-size: 18px;
+    border-right: 2px solid #ff0000;
+    padding-right: 7px;
+    color: aliceblue;
 }
 
 .contatos-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 55px;
 }
+
+.nav-contatos{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.nav-contatos a{
+    padding: 5px 10px;
+    display: flex;
+    text-decoration-line: none;
+    width: 120px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    border-right: 3px solid red;
+    border-radius: 5px 0px 0px 5px;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.11);
+}
+
+.nav-contatos a:hover{
+    background-color: rgba(0, 0, 0, 0.329);
+}
+
+.nav-contatos > a > p{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-contatos img{
+    width: 20px;
+    object-fit: cover;
+}
+
 
 .formEmail{
     display: flex;
@@ -19,4 +68,196 @@
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    position: relative;
+}
+
+.alerta-contatos::after{
+    content: 'Me envie um email!';
+    color: white;
+}
+
+#nome, #email{
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    width: 20vw;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 7px;
+}
+
+#mensagem{
+    background-color: transparent;
+    border: 2px solid #ff0000;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 7px;
+    max-height: 20vh;
+    max-width: 20vw;
+    min-width: 20vw;
+    min-height: 20vh;
+}
+
+#nome:focus, #email:focus, #mensagem:focus{
+    outline: 0;
+}
+
+#label-msg, #label-nome, #label-email{
+    position: absolute;
+    color: white;
+    background-color: rgb(34, 34, 34);
+    padding: 0px 5px;
+}
+
+#label-nome{
+    left: 20px;
+    top: -11px;
+}
+
+#label-email{
+    left: 20px;
+    top:  35px;
+}
+
+#label-msg{
+    left: 20px;
+    top: 80px;
+}
+
+@media (max-width: 805px){
+    .contatos{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin: 140px 0px;
+    }
+    
+    #tituloContatos{
+        text-transform: uppercase;
+        font-size: 18px;
+        border-right: 2px solid #ff0000;
+        padding-right: 7px;
+        color: aliceblue;
+    }
+    
+    .contatos-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 55px;
+        flex-direction: column;
+    }
+
+    .alerta-contatos::after{
+        display: none;
+    }
+    
+    .nav-contatos::after{
+        content: 'Me envie um email!';
+        color: white;
+        margin-top: 10px;
+        margin-bottom: -20px;
+    }
+
+    .nav-contatos{
+        width: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .nav-contatos a{
+        padding: 5px 10px;
+        display: flex;
+        text-decoration-line: none;
+        width: 120px;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 15px;
+        border-right: 3px solid red;
+        border-radius: 5px 0px 0px 5px;
+        transition: 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.11);
+    }
+    
+    .nav-contatos a:hover{
+        background-color: rgba(0, 0, 0, 0.329);
+    }
+    
+    .nav-contatos > a > p{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nav-contatos img{
+        width: 20px;
+        object-fit: cover;
+    }
+    
+    
+    .formEmail{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        position: relative;
+    }
+
+    #formEmail::before{
+        content: 'Me envie um email!';
+    }
+    
+    #nome, #email{
+        background-color: transparent;
+        border: 2px solid #ff0000;
+        width: 50vw;
+        padding: 5px 15px;
+        color: white;
+        border-radius: 7px;
+    }
+    
+    #mensagem{
+        background-color: transparent;
+        border: 2px solid #ff0000;
+        padding: 5px 15px;
+        color: white;
+        border-radius: 7px;
+        max-height: 30vh;
+        max-width: 50vw;
+        min-width: 50vw;
+        min-height: 30vh;
+    }
+    
+    #nome:focus, #email:focus, #mensagem:focus{
+        outline: 0;
+    }
+    
+    #label-msg, #label-nome, #label-email{
+        position: absolute;
+        color: white;
+        background-color: rgb(34, 34, 34);
+        padding: 0px 5px;
+    }
+    
+    #label-nome{
+        left: 20px;
+        top: -11px;
+    }
+    
+    #label-email{
+        left: 20px;
+        top:  35px;
+    }
+    
+    #label-msg{
+        left: 20px;
+        top: 80px;
+    }
+    
 }
