@@ -30,7 +30,7 @@ function Header(){
 
     return(
         <header id="header">
-            <img src={process.env.PUBLIC_URL + "/assets/img/logo-matheus-urban.png"} className="logo" alt="Logo Matheus Urban"/>
+            <Link to="/" onClick={iniciarNoTopo} className="logo"> <img src={process.env.PUBLIC_URL + "/assets/img/logo-matheus-urban.png"} className="logo-img" alt="Logo Matheus Urban"/></Link>
             <div className="menuMobile">
                 <button className="btn" onClick={menuMobileOnOff}>
                     <img src={process.env.PUBLIC_URL + "/assets/img/menu-deep.svg"} alt="Menu Aberto" id="menuFechado" className={botaoMenuHamburguer}/>
