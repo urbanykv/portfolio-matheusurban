@@ -14,7 +14,8 @@
     width: 66%;
     height: 70%;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    background-repeat: no-repeat;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -38,7 +39,6 @@
     opacity: 0;
     transition: 0.5s ease;
     position: absolute;
-    
 }
 
 .card:hover img , .cardDestaque:hover img{
@@ -120,7 +120,6 @@
         z-index: 1;
         margin: 5px 25px;
     }
-    
     
     .cardDestaque > #demo{
         width: 55px;
