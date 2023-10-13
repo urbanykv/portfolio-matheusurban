@@ -14,7 +14,7 @@
     width: 66%;
     height: 70%;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     border-radius: 15px;
     display: flex;
@@ -50,7 +50,7 @@
     font-size: 19px;
     opacity: 0;
     transition: 0.5s ease;
-    margin: 25px 0px 0px 25px;
+    margin: 20px 0px 0px 20px;
     z-index: 1;
 }
 

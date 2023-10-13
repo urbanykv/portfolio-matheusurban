@@ -48,7 +48,7 @@ function Home() {
                 <h1 id="tituloPD">Projeto em Destaque</h1>
                 <div className="pd">
                 {
-                    <div style={{backgroundImage: `url(${projetoDevPrincipal.imageDestaque})`}} className="cardDestaque" key={projetoDevPrincipal.id}>
+                    <div style={{backgroundImage: `url(${projetoDevPrincipal.image})`}} className="cardDestaque" key={projetoDevPrincipal.id}>
                         <img src="assets/img/opacidade.png"/>
                         <h1 id="tituloCard">{projetoDevPrincipal.nome}</h1>
                         <p className="tecnologiasProjetos">{projetoDevPrincipal.tecnologias}</p>

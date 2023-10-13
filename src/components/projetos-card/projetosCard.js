@@ -2,15 +2,13 @@ import React from "react";
 import './projetosCard.css'
 
     export const projetosDev = [
-        {id: '1', nome: "Urban's Ristorante", tecnologias: 'CSS, JavaScript e React.js', image: 'assets/img/urban-ristorante-2.png',
+        {id: 2, nome: 'Detone o Ralph', tecnologias: 'HTML, CSS e JavaScript', image: 'assets/img/ralph-background.jpg', github: 'https://github.com/urbanykv/consultar-cep', demo: 'https://consultar-cep-omega.vercel.app/'},
+
+        {id: 3, nome: "Urban's Ristorante", tecnologias: 'HTML(JSX), CSS, JavaScript e React.js', image: 'assets/img/cardapio-digital-background.jpg',
         imageDestaque: 'assets/img/urban-ristorante.png',
          github: 'https://github.com/urbanykv/urban-ristorante', demo: 'https://urban-ristorante.vercel.app/'},
 
-        {id: '2', nome: 'Consultar CEP', tecnologias: 'HTML, CSS e JavaScript', image: 'assets/img/consulta-cep.png', github: 'https://github.com/urbanykv/consultar-cep', demo: 'https://consultar-cep-omega.vercel.app/'},
-
-        {id: '3', nome: 'Tela de Login', tecnologias: 'HTML e CSS', image: 'assets/img/tela-de-login.png', github: 'https://github.com/urbanykv/projeto-tela-de-login', demo: 'https://urbanykv.github.io/projeto-tela-de-login/'},
-
-        {id: '4', nome: 'Redes Sociais', tecnologias: 'HTML e CSS', image: 'assets/img/redes-sociais.png', github: 'https://github.com/urbanykv/projeto-redes-sociais', demo: 'https://urbanykv.github.io/projeto-redes-sociais/'}
+        {id: 4, nome: 'Consultar CEP', tecnologias: 'HTML, CSS e JavaScript', image: 'assets/img/cep-background.jpg', github: 'https://github.com/urbanykv/consultar-cep', demo: 'https://consultar-cep-omega.vercel.app/'},
     ]
 
 export const CardProjetos = () => (
