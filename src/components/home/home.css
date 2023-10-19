@@ -316,6 +316,7 @@
     /*Formação*/
     
     .formacao{
+        margin-top: -5px;
         width: 100%;
         height: 400px;
         display: flex;

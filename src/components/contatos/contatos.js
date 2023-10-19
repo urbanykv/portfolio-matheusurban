@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './contatos.css'
 import emailJS from "@emailjs/browser"
 
-function Contatos(){
+function Contatos({menu, setBotaoMenuHamburguer, setMenu, setBotaoMenuX, menuMobileOnOff}){
 
     const [nome, setNome] = useState('');
     const [email, setEmail]  = useState('');
@@ -11,15 +11,11 @@ function Contatos(){
     function mandarEmail(e){
         e.preventDefault();
 
-
-
         const templateParans = {
             from_name: nome,
             message: mensagem,
             email: email
         }
-
-
 
         emailJS.send('service_1pekhpj', 'template_snqhn73', templateParans, 'eTaAMTSJWTRQ1xArf')
             .then((response) => {
@@ -31,11 +27,18 @@ function Contatos(){
             }, (error) =>{
                 console.log('Erro: ', error);
             })
+    }
 
+    menuMobileOnOff = () => {
+        if(menu === 'menuOn'){
+            setMenu('menuOff')
+            setBotaoMenuHamburguer('menuOn')
+            setBotaoMenuX('menuOff')
+        }
     }
 
     return(
-        <div className="contatos">
+        <div className="contatos" onClick={menuMobileOnOff}>
             <h1 id="tituloContatos">Contatos</h1>
             <div className="alerta-contatos"></div>
             <div className="contatos-container">

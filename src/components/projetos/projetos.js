@@ -4,10 +4,18 @@ import { CardProjetos } from "../projetos-card/projetosCard";
 
 
 
-function Projetos(){
+function Projetos({menu, setBotaoMenuHamburguer, setMenu, setBotaoMenuX, menuMobileOnOff}){
+
+    menuMobileOnOff = () => {
+        if(menu === 'menuOn'){
+            setMenu('menuOff')
+            setBotaoMenuHamburguer('menuOn')
+            setBotaoMenuX('menuOff')
+        }
+    }
 
     return(
-        <div className="projetos-pag">
+        <div className="projetos-pag" onClick={menuMobileOnOff}>
             <section className="projetos">
                     <h1 id="tituloProjetos">Projetos</h1>
                     <span className="alerta"></span>

@@ -3,7 +3,8 @@ import './home.css'
 import { Link } from "react-router-dom";
 import { projetosDev } from "../projetos-card/projetosCard";
 
-function Home() {
+function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoMenuX}) {
+
 
     const projetoDevPrincipal = projetosDev[0]
 
@@ -15,8 +16,16 @@ function Home() {
         setTopo(topo);
     }
 
+    menuMobileOnOff = () => {
+        if(menu === 'menuOn'){
+            setMenu('menuOff')
+            setBotaoMenuHamburguer('menuOn')
+            setBotaoMenuX('menuOff')
+        }
+    }
+
     return (
-        <div className="home-pag">
+        <div className="home-pag" onClick={menuMobileOnOff}>
             <section className="home" id="home">
                 <div className="card-home">
                     <div className="info-card-home">

@@ -2,21 +2,16 @@ import React, { useState } from "react"
 import './header.css'
 import { Link } from "react-router-dom"
 
-function Header(){
+function Header({menu,  botaoMenuHamburguer, botaoMenuX, setBotaoMenuHamburguer, setMenu, setBotaoMenuX, menuMobileOnOff}){
 
     let [topo, setTopo] = useState(undefined);
 
     function iniciarNoTopo(){
         topo = window.scrollTo({top: 0});
-    
         setTopo(topo);
     }
 
-    const [menu, setMenu] = useState('menuOff');
-    const [botaoMenuHamburguer, setBotaoMenuHamburguer] = useState('menuOn');
-    const [botaoMenuX, setBotaoMenuX] = useState('menuOff');
-
-    function menuMobileOnOff (){
+    menuMobileOnOff = () => {
         if(menu === 'menuOff'){
             setMenu('menuOn');
             setBotaoMenuHamburguer('menuOff')
