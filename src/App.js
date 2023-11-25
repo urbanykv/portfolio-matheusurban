@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import './reset.css'
 import Rotas from "./routes/rotas";
 

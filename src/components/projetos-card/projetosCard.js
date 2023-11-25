@@ -2,6 +2,9 @@ import React from "react";
 import './projetosCard.css'
 
     export const projetosDev = [
+
+        {id: 1, nome: 'Urban Store', tecnologias: 'HTML(JSX), CSS, JavaScript e React.js', image: 'assets/img/ralph-background.jpg', github: 'https://github.com/urbanykv/urban-store', demo: 'https://urban-store-coral.vercel.app/'},
+
         {id: 2, nome: 'Detone o Ralph', tecnologias: 'HTML, CSS e JavaScript', image: 'assets/img/ralph-background.jpg', github: 'https://github.com/urbanykv/jogo-detona-ralph', demo: 'https://jogo-detona-ralph-one.vercel.app/'},
 
         {id: 3, nome: "Urban's Ristorante", tecnologias: 'HTML(JSX), CSS, JavaScript e React.js', image: 'assets/img/cardapio-digital-background.jpg',
