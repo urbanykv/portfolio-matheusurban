@@ -32,7 +32,7 @@ function Header({menu,  botaoMenuHamburguer, botaoMenuX, setBotaoMenuHamburguer,
                     <img src={process.env.PUBLIC_URL + "/assets/img/circle-dashed-x.svg"} alt="Menu Fechado" id="menuXdefault" className={botaoMenuX}/>
                 </button>
                 <nav className={`nav-mobile ${menu}`}>
-                        <Link to="/" onClick={iniciarNoTopo}>Home<hr/></Link>
+                        <Link to="/" onClick={iniciarNoTopo}>Inicio<hr/></Link>
                         <Link to="/projetos" onClick={iniciarNoTopo}>Projetos<hr/></Link>
                         <Link to="contatos" onClick={iniciarNoTopo}>Contatos<hr/></Link>
                 </nav>
