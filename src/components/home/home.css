@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     width: 85%;
-    height: 80vh;
+    height: 600px;
     animation: animacao-home both 2s ease;
     gap: 35px;
 }
@@ -305,8 +305,8 @@
         justify-content: center;
         align-items: center;
         width: 90%;
-        height: 80vh;
-        animation: animacao-home both 2s ease;
+        height: 500px;
+        animation: none;
         gap: 25px;
     }
 
@@ -346,9 +346,7 @@
         justify-content: center;
         flex-direction: column-reverse;
         align-items: center;
-        width: 85%;
-        height: 80vh;
-        animation: animacao-home both 2s ease;
+        animation: none;
     }
     
     .info{
@@ -418,7 +416,7 @@
     }
 }
 
-@media (max-width: 600px){
+@media (max-width: 700px){
 
     .card-sobre{
         background-color: #f0f8ff17;
@@ -430,7 +428,7 @@
         flex-direction: column-reverse;
         align-items: center;
         width: 85%;
-        height: 80vh;
+        height: 700px;
         animation: none;
     }
 
