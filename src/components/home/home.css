@@ -164,7 +164,7 @@
 .nav-sobre{
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 15px;
     min-width: 200px;

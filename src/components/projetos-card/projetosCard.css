@@ -51,7 +51,7 @@
     align-items: center;
     width: 250px;
     gap: 15px;
-    margin: 0 20px;
+    margin: 0 20px 15px 20px;
 }
 
 .desc{
