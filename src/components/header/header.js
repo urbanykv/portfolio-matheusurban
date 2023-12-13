@@ -38,7 +38,7 @@ function Header({menu,  botaoMenuHamburguer, botaoMenuX, setBotaoMenuHamburguer,
                 </nav>
             </div>
             <nav id="nav">
-                <Link to="/" onClick={iniciarNoTopo}>Home<hr/></Link>
+                <Link to="/" onClick={iniciarNoTopo}>Inicio<hr/></Link>
                 <Link to="/projetos" onClick={iniciarNoTopo}>Projetos<hr/></Link>
                 <Link to="contatos" onClick={iniciarNoTopo}>Contatos<hr/></Link>
             </nav>

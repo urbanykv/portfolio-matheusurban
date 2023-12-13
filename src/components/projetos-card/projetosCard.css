@@ -1,127 +1,111 @@
 .card{
-    width: 200px;
-    height: 300px;
+    width: 325px;
+    height: 375px;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(128, 128, 128);
+    border: 1px solid rgba(177, 177, 177, 0.295);
     position: relative;
 }
 
-.cardDestaque{
-    width: 66%;
-    height: 70%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    background-color: grey;
-    position: relative;
-}
-
-.card img{
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-    opacity: 0;
-    transition: 0.5s ease;
-    position: absolute;
-}
-
-.cardDestaque img{
+.card > img{
+    object-fit: cover;
     width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    opacity: 0;
+    border-radius: 15px 15px 0 0;
     transition: 0.5s ease;
-    position: absolute;
-}
-
-.card:hover img , .cardDestaque:hover img{
-    opacity: 100%;
 }
 
 #tituloCard{
-    color: white;
+    color: rgb(218, 218, 218);
     font-size: 19px;
-    opacity: 0;
     transition: 0.5s ease;
     margin: 20px 0px 0px 20px;
     z-index: 1;
 }
 
-.tecnologiasProjetos{
-    color: white;
-    opacity: 0;
-    transition: 0.5s ease;
-    margin: 15px 25px;
-    z-index: 1;
-}
-
-.card:hover #tituloCard, 
-.card:hover .btn-projetos, 
-.card:hover .tecnologiasProjetos,
-.cardDestaque:hover #tituloCard, 
-.cardDestaque:hover .btn-projetos, 
-.cardDestaque:hover .tecnologiasProjetos{
+.tecnologias{
     display: flex;
-    opacity: 1;
-}
-
-.cardDestaque > .btn-projetos{
-    padding: 3px 0px;
-    display: inline;
-    width: 80px;
-    color: white;
-    opacity: 0;
-    transition: 0.5s ease;
-    text-decoration-line: none;
-    border-bottom: 2px solid red;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 20px 10px 20px;
     z-index: 1;
-    margin: 5px 25px;
 }
 
-.cardDestaque > #demo{
-    width: 55px;
+.tecs-projetos{
+    max-width: 27px;
+    object-fit: cover;
+    filter: grayscale(80%);
+    transition: 0.5s ease;
+}
+
+.tecs-projetos:hover{
+    filter: grayscale(0);
+}
+
+.btns{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 250px;
+    gap: 15px;
+    margin: 0 20px;
+}
+
+.desc{
+    padding: 3px 0px;
+    width: 80%;
+    height: 40px;
+    color: rgb(218, 218, 218);
+    transition: 0.5s ease;  
+    margin: 7px 0px 0px 20px;
 }
 
 .btn-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
     padding: 3px 0px;
-    display: inline;
+    background-color: rgb(56, 56, 56);
     width: 40%;
-    color: white;
-    opacity: 0;
+    color: rgb(218, 218, 218);
     transition: 0.5s ease;
     text-decoration-line: none;
-    border-bottom: 2px solid red;
-    z-index: 1;
-    margin: 5px 25px;
+    margin: 5px 0;
 }
 
+.btn-projetos:hover{
+    color: white;
+    background-color: rgba(56, 56, 56, 0.452);
+}
 
 #demo{
     width: 28%;
 }
 
-@media (max-width: 800px) {
-    .cardDestaque >.btn-projetos{
-        padding: 3px 0px;
-        display: inline;
-        width: 80px;
-        color: white;
-        opacity: 0;
-        transition: 0.5s ease;
-        text-decoration-line: none;
-        border-bottom: 2px solid red;
-        z-index: 1;
-        margin: 5px 25px;
+@media (max-width: 850px){
+    .card{
+        width: 250px;
+        height: 330px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(177, 177, 177, 0.295);
+        position: relative;
     }
     
-    .cardDestaque > #demo{
-        width: 55px;
+    .desc{
+        font-size: 15px;
+        padding: 3px 0px;
+        width: 80%;
+        height: 40px;
+        color: rgb(218, 218, 218);
+        transition: 0.5s ease;  
+        margin: 0px 0px 5px 20px;
     }
 }

@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import './home.css'
 import { Link } from "react-router-dom";
 import { projetosDev } from "../projetos-card/projetosCard";
+import { tecnologias } from "../projetos-card/projetosCard";
 
 function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoMenuX}) {
-
-
-    const projetoDevPrincipal = projetosDev[0]
+    const projetoDevPrincipal = projetosDev[0];
+    const projetoDevSecundario = projetosDev[1];
 
     let [topo, setTopo] = useState(undefined);
 
@@ -26,47 +26,85 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
 
     return (
         <div className="home-pag" onClick={menuMobileOnOff}>
-            <section className="home" id="home">
-                <div className="card-home">
-                    <div className="info-card-home">
-                        <h1>Desenvolvedor Front-end & Designer Gráfico.</h1>
-                        <p>Eu sou o <span>Matheus Urban</span>, tenho 21 anos, sou Desenvolvedor Front-end e Designer gráfico. Trabalho com <span>HTML, CSS, JavaScript, React.js e Photoshop</span> para criar interfaces atrativas e interativas.</p>
+            <section className="sobre">
+                <section className="card-sobre">
+                    <div className="info">
+                        <article className="apresentacao">
+                            <div className="infos-sobremim">
+                                <h1>Matheus Urban</h1>
+                                <div>
+                                    <img src={process.env.PUBLIC_URL + "assets/icons/world.svg"} alt="world"/>
+                                    <span>Osasco, São Paulo</span>
+                                </div>
+                            </div>
+                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor Front-end.</p>
+                            <p>Desenvolvimento de Software é a minha paixão, ver as linhas de códigos darem vida a um projeto é algo que me motiva a buscar cada vez mais a melhor versão de Desenvolvedor que existe em mim.</p>
+                            <hr/>
+                            <article className="skills">
+                                <h1>Tecnologias<span> • meus conhecimentos técnicos</span></h1>
+                                <div className="tec">
+                                    {tecnologias.map(tec => <img className="tec-icons" src={tec.icon} alt={tec.nome} key={tec.nome}/>)}
+                                </div>
+                            </article>
+                            <nav className="nav-sobre">
+                                <a href="https://www.linkedin.com/in/urbanykv" target="_blank" rel="noreferrer">
+                                    <img src={process.env.PUBLIC_URL + "assets/img/linkedin-logo-dark.png"} alt="Logo LinkedIn" /> 
+                                </a>
+                                <a href="https://github.com/urbanykv" target="_blank" rel="noreferrer">
+                                    <img src={process.env.PUBLIC_URL + "assets/img/github-logo-dark.png"} alt="Logo GitHub" />
+                                </a>
+                                <a href="https://wa.link/yu6hn9" target="_blank" rel="noreferrer">
+                                    <img src={process.env.PUBLIC_URL + "assets/img/whatsapp-logo-dark.png"}alt="Logo WhatsApp" />
+                                </a>
+                            </nav>
+                        </article>
                     </div>
-                    <div className="botoes-home">
-                        <a href="https://www.linkedin.com/in/urbanykv" target="_blank"><img src={process.env.PUBLIC_URL + "assets/img/linkedin-logo-dark.png"} alt="Logo LinkedIn" /> <p>LinkedIn</p></a>
-                        <a href="https://github.com/urbanykv" target="_blank"><img src={process.env.PUBLIC_URL + "assets/img/github-logo-dark.png"}alt="Logo GitHub" /> <p>GitHub</p></a>
-                        <a href="https://wa.link/yu6hn9" target="_blank" id="whatsapp-btn">
-                            <img src={process.env.PUBLIC_URL + "assets/img/whatsapp-logo-dark.png"}alt="Logo WhatsApp" />
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section className="formacao" id="formacao">
-                <div class="formacoes" id="forms">
-                <h1 id="tituloForm">Formação Acadêmica</h1>
-                    <div className="forms">
-                        <h1>Engenharia de Software</h1>
-                        <h2>Estácio Osasco</h2>
-                        <div class="andamento">
-                            <p>2023 - 2027 <span>• Em andamento</span></p><img src="assets/img/clock.png" alt="Relógio" />
-                        </div>
-                    </div>
-                </div>
+                    <img src={process.env.PUBLIC_URL + "assets/img/foto-matheus.jpeg"} alt="foto matheus urban"/>
+                </section>
             </section>
             <section className="projeto-destaque">
-                <h1 id="tituloPD">Projeto em Destaque</h1>
+                <div className="titulo-btn">
+                    <h1 id="tituloPD">Projetos recentes</h1>
+                    <Link to="/projetos" id="btn-ver-mais" onClick={iniciarNoTopo}>Ver todos →<hr/></Link>
+                </div>
                 <div className="pd">
-                {
-                    <div style={{backgroundImage: `url(${projetoDevPrincipal.image})`}} className="cardDestaque" key={projetoDevPrincipal.id}>
-                        <img src="assets/img/opacidade.png"/>
-                        <h1 id="tituloCard">{projetoDevPrincipal.nome}</h1>
-                        <p className="tecnologiasProjetos">{projetoDevPrincipal.tecnologias}</p>
-                        <a href={projetoDevPrincipal.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>
-                        <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>
+                    {
+                        <div className="card" key={projetoDevPrincipal.id}>
+                            <img src={projetoDevPrincipal.image} alt="opacidade"/>
+                            <h1 id="tituloCard">{projetoDevPrincipal.nome}</h1>
+                            <p className="desc">{projetoDevPrincipal.descricao}</p>
+                            <div className="tecnologias">
+                                {projetoDevPrincipal.tecnologias.map(tec => <img className="tecs-projetos" src={tec.icon} alt={tec.nome} key={tec.id}/>)}
+                            </div>
+                            <div className="btns">
+                                <a href={projetoDevPrincipal.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>
+                                <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>
+                            </div>
+                        </div>
+                    }
+                    {
+                        <div className="card" key={projetoDevSecundario.id}>
+                            <img src={projetoDevSecundario.image} alt="opacidade"/>
+                            <h1 id="tituloCard">{projetoDevSecundario.nome}</h1>
+                            <p className="desc">{projetoDevSecundario.descricao}</p>
+                            <div className="tecnologias">
+                                {projetoDevSecundario.tecnologias.map(tec => <img className="tecs-projetos" src={tec.icon} alt={tec.nome} key={tec.id}/>)}
+                            </div>
+                            <div className="btns">
+                                <a href={projetoDevSecundario.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>
+                                <a href={projetoDevSecundario.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div className="area-contatos">
+                    <hr/>
+                    <div className="card-contatos">
+                        <h1>Vamos desenvolver algo juntos!</h1>
+                        <p>Caso você tenha gostado do que viu e agora está interessado(a) em saber mais sobre mim e meu trabalho, vamos trocar uma ideia.</p>
+                        <Link to="/contatos" id="btn-contateme" onClick={iniciarNoTopo}>Entre em contato.</Link>
                     </div>
-                }
-                </div> 
-                <Link to="/projetos" id="btn-ver-mais" onClick={iniciarNoTopo}>Ver mais projetos<hr/></Link>
+                </div>
             </section>
         </div>
     )

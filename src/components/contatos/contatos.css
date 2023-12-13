@@ -10,22 +10,32 @@
 }
 
 .contatos{
+    padding-top: 100px;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
+    background-color: rgb(34, 34, 34);
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     gap: 30px;
+    transition: none;
     animation: animacao-contatos both 0.9s ease;
 }
 
+
 #tituloContatos{
-    text-transform: uppercase;
-    font-size: 18px;
-    border-right: 2px solid #ff0000;
-    padding-right: 7px;
-    color: aliceblue;
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+}
+
+.contatos > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(218, 218, 218);
+    width: 500px;
 }
 
 .contatos-container{
@@ -33,79 +43,77 @@
     justify-content: space-between;
     align-items: center;
     gap: 55px;
+    transition: none;
 }
 
 .nav-contatos{
-    width: 150px;
+    width: 100px;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     gap: 30px;
 }
 
 .nav-contatos a{
-    padding: 5px 10px;
     display: flex;
-    text-decoration-line: none;
-    width: 120px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
-    border-right: 3px solid red;
-    border-radius: 5px 0px 0px 5px;
-    transition: 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.11);
+    text-decoration-line: none;
+    color: rgb(255, 255, 255);
+    border: 2px solid #a3000000;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.5s ease-out;
+    gap: 5px;
 }
 
 .nav-contatos a:hover{
-    background-color: rgba(0, 0, 0, 0.616);
+    border: 2px solid #ffffffbb;
+
 }
 
-.nav-contatos > a > p{
-    text-decoration: none;
-    color: white;
-}
-
-.nav-contatos img{
+.nav-contatos > a > img{
     width: 20px;
-    object-fit: cover;
 }
 
+.contatos hr{
+    background-color: #474747;
+    height: 350px;
+    width: 1px;
+}
 
 .formEmail{
+    padding: 50px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 6px;
     position: relative;
 }
 
-.alerta-contatos::after{
-    content: 'Me envie um email!';
-    color: white;
-}
-
 #nome, #email{
-    background-color: transparent;
-    border: 2px solid #ff0000;
+    background-color: rgba(75, 75, 75, 0.11);
+    border: 1px solid #5f5f5f75;
     width: 20vw;
     padding: 10px 15px;
-    color: white;
-    border-radius: 7px;
+    color: rgb(218, 218, 218);
+    border-radius: 4px;
 }
 
 #mensagem{
-    background-color: transparent;
-    border: 2px solid #ff0000;
+    background-color: rgba(75, 75, 75, 0.11);
+    border: 1px solid #5f5f5f75;
     padding: 15px 15px;
-    color: white;
-    border-radius: 7px;
-    max-height: 20vh;
+    color: rgb(218, 218, 218);
+    border-radius: 4px;
+    max-height: 13vh;
     max-width: 20vw;
     min-width: 20vw;
-    min-height: 20vh;
+    min-height: 13vh;
 }
 
 #nome:focus, #email:focus, #mensagem:focus{
@@ -113,180 +121,89 @@
 }
 
 #label-msg, #label-nome, #label-email{
-    position: absolute;
-    color: white;
-    background-color: rgb(34, 34, 34);
-    padding: 0px 5px;
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    align-self: start;
 }
 
-#label-nome{
-    left: 20px;
-    top: -12px;
-}
-
-#label-email{
-    left: 20px;
-    top:  45px;
-}
-
-#label-msg{
-    left: 20px;
-    top: 100px;
-}
 
 .formEmail button{
-    background-color: #ff0000;
-    color: white;
+    background-image: linear-gradient(to left, #e0e0e0 75%, #ffffff);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: 0;
     padding: 7px;
     width: 150px;
-    border-radius: 7px;
-    border: 2px solid rgb(184, 0, 0);
+    border-radius: 4px;
     cursor: pointer;
-}
-.formEmail button:hover{
-    background-color: rgb(235, 0, 0);
+    margin-top: 15px;
 }
 
-@media (max-width: 805px){
+@media (max-width: 900px){
+
     .contatos{
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        gap: 30px;
-        padding: 175px 0px;
         animation: none;
     }
-    
-    #tituloContatos{
-        text-transform: uppercase;
-        font-size: 18px;
-        border-right: 2px solid #ff0000;
-        padding-right: 7px;
-        color: aliceblue;
-    }
-    
-    .contatos-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 55px;
-        flex-direction: column;
+
+    .contatos > span{
+        font-size: 16px;
+        color: rgb(218, 218, 218);
+        width: 500px;
     }
 
-    .alerta-contatos::after{
-        display: none;
-    }
-    
-    .nav-contatos::after{
-        content: 'Me envie um email!';
-        color: white;
-        margin-top: 10px;
-        margin-bottom: -20px;
+    .contatos-container{
+        flex-direction: column;
     }
 
     .nav-contatos{
-        width: 150px;
+        width: 250px;
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
-        align-items: flex-start;
-        flex-direction: column;
+        align-items: center;
         gap: 30px;
     }
-    
-    .nav-contatos a{
-        padding: 5px 10px;
-        display: flex;
-        text-decoration-line: none;
-        width: 120px;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 15px;
-        border-right: 3px solid red;
-        border-radius: 5px 0px 0px 5px;
-        transition: 0.5s ease;
-        background-color: rgba(0, 0, 0, 0.11);
-    }
-    
-    .nav-contatos a:hover{
-        background-color: rgba(0, 0, 0, 0.616);
-    }
-    
-    .nav-contatos > a > p{
-        text-decoration: none;
-        color: white;
-    }
-    
-    .nav-contatos img{
-        width: 20px;
-        object-fit: cover;
-    }
-    
-    
-    .formEmail{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        position: relative;
+
+    .contatos hr{
+        background-color: #474747;
+        height: 1px;
+        width: 300px;
     }
 
-    #formEmail::before{
-        content: 'Me envie um email!';
+    .formEmail{
+        padding: 5px 0 75px 0;
     }
-    
+
     #nome, #email{
-        background-color: transparent;
-        border: 2px solid #ff0000;
-        width: 50vw;
-        padding: 5px 15px;
-        color: white;
-        border-radius: 7px;
+        width: 30vw;
     }
     
     #mensagem{
-        background-color: transparent;
-        border: 2px solid #ff0000;
-        padding: 5px 15px;
-        color: white;
-        border-radius: 7px;
-        max-height: 30vh;
-        max-width: 50vw;
-        min-width: 50vw;
-        min-height: 30vh;
+        max-width: 30vw;
+        min-width: 30vw;
     }
-    
-    #nome:focus, #email:focus, #mensagem:focus{
-        outline: 0;
-    }
-    
-    #label-msg, #label-nome, #label-email{
-        position: absolute;
-        color: white;
-        background-color: rgb(34, 34, 34);
-        padding: 0px 5px;
-    }
-    
-    #label-nome{
-        left: 20px;
-        top: -11px;
-    }
-    
-    #label-email{
-        left: 20px;
-        top:  35px;
-    }
-    
-    #label-msg{
-        left: 20px;
-        top: 80px;
-    }
-    
-    .formEmail button{
-        background-color: #ff0000;
+}
+
+@media (max-width: 650px){
+
+    .contatos > span{
+        font-size: 16px;
+        color: rgb(218, 218, 218);
+        width: 240px;
     }
 
+    .contatos hr{
+        background-color: #474747;
+        height: 1px;
+        width: 90%;
+    }
+
+    #nome, #email{
+        width: 50vw;
+    }
+    
+    #mensagem{
+        max-width: 50vw;
+        min-width: 50vw;
+    }
 }

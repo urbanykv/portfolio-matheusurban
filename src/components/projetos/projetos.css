@@ -13,30 +13,35 @@
 
 .projetos-pag{
     padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     background-color: #222222;
 }
 
 .projetos{
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 30px;
     animation: animacao-projetos both 0.8s ease;
 }
 
 #tituloProjetos{
-    text-transform: uppercase;
-    font-size: 18px;
-    border-right: 2px solid #ff0000;
-    padding-right: 7px;
-    color: aliceblue;
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+}
+
+.projetos > span{
+    font-size: 16px;
+    color: rgb(218, 218, 218);
+    width: 500px;
 }
 
 .projetos-dev{
@@ -48,24 +53,18 @@
     gap: 15px;
 }
 
-.alerta::after{
-    content: '(Passe o mouse para mais Informações.)';
-    display: flex;
-    color: white;
-}
-
 #btn-ver-mais{
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    color: white;
+    color: rgb(218, 218, 218);
     font-size: 17px;
     border: none;
     cursor: pointer;
-    padding: 5px;
+    padding: 5px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;    
     text-decoration-line: none;
 }
 
@@ -80,185 +79,37 @@
     margin-top: 2.5px;
 }
 
-#btn-ver-mais:hover  hr{
+#btn-ver-mais:hover hr{
     background-color: #ff0000;
     width: 97%;
     opacity: 100%;
 }
 
-#btn-ver-mais{
-    margin: 0px 0px 50px 0px;
-}
+@media (max-width: 900px){
 
-@media (max-width: 805px) and (min-width: 536px) {
-    .projetos-pag{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #222222;
-    }
-    
     .projetos{
         width: 100%;
-        margin: 180px 0px !important; 
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
-        gap: 40px;
-        background-color: #222222;
+        gap: 30px;
         animation: none;
     }
-    
-    #tituloProjetos{
-        text-transform: uppercase;
-        font-size: 18px;
-        border-right: 2px solid #ff0000;
-        padding-right: 7px;
-        color: aliceblue;
-    }
-    
-    .projetos-dev{
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .alerta::after{
-        content: '(Clique para mais Informações.)';
-        display: flex;
-        color: white;
-        font-size: 14px;
-    }
-    
-    #btn-ver-mais{
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        color: white;
-        font-size: 13px;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-decoration-line: none;
-    }
-    
-    #btn-ver-mais > hr{
-        width: 0px;
-        height: 2px;
-        border-radius: 55px;
-        border: none;
-        transition: 0.5s ease-in-out;
-        background-color: #ff0000;
-        opacity: 40%;
-        margin-top: 2.5px;
-    }
-    
-    #btn-ver-mais:hover  hr{
-        background-color: #ff0000;
-        width: 97%;
-        opacity: 100%;
-    }
-    
-    #btn-ver-mais{
-        margin: 0px 0px 50px 0px;
+
+    .projetos > span{
+        font-size: 16px;
+        color: rgb(218, 218, 218);
+        width: 500px;
     }
 }
 
-@media (max-width: 535px) {
-    .projetos-pag{
-        padding: 0px 0px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #222222;
-    }
-    
-    .projetos{
-        width: 100%;
-        margin: 500px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-        background-color: #222222;
-        animation: none;
-    }
-    
-    #tituloProjetos{
-        text-transform: uppercase;
-        font-size: 18px;
-        border-right: 2px solid #ff0000;
-        padding-right: 7px;
-        color: aliceblue;
-    }
-    
-    .projetos-dev{
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
-    }
-    
-    .alerta::after{
-        content: '(Toque para mais Informações.)';
-        display: flex;
-        color: white;
-        font-size: 14px;
-    }
-    
-    .botoesAlterarProjetos{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
-        gap: 25px;
-    }
-    
-    #btn-ver-mais{
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 5px;
-        color: white;
-        font-size: 13px;
-        border: none;
-        cursor: pointer;
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-decoration-line: none;
-    }
-    
-    #btn-ver-mais > hr{
-        width: 0px;
-        height: 2px;
-        border-radius: 55px;
-        border: none;
-        transition: 0.5s ease-in-out;
-        background-color: #ff0000;
-        opacity: 40%;
-        margin-top: 2.5px;
-    }
-    
-    #btn-ver-mais:hover  hr{
-        background-color: #ff0000;
-        width: 97%;
-        opacity: 100%;
-    }
-    
-    #btn-ver-mais{
-        margin: 0px 0px 50px 0px;
+@media (max-width: 650px){
+
+    .projetos > span{
+        font-size: 16px;
+        color: rgb(218, 218, 218);
+        width: 240px;
     }
 }

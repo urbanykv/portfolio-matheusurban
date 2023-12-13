@@ -40,22 +40,20 @@ function Contatos({menu, setBotaoMenuHamburguer, setMenu, setBotaoMenuX, menuMob
     return(
         <div className="contatos" onClick={menuMobileOnOff}>
             <h1 id="tituloContatos">Contatos</h1>
-            <div className="alerta-contatos"></div>
+            <span>Gostou do que viu e está afim de entrar em contato comigo? aqui está várias formas de fazer isso.</span>
             <div className="contatos-container">
                 <nav className="nav-contatos">
-                        <a href="https://www.linkedin.com/in/urbanykv" target="_blank">
-                            <p>LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/urbanykv" target="_blank" rel="noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/img/linkedin-logo-dark.png"} alt="Logo LinkedIn" /> 
                         </a>
-                        <a href="https://github.com/urbanykv" target="_blank">
-                            <p>GitHub</p>
+                        <a href="https://github.com/urbanykv" target="_blank" rel="noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/img/github-logo-dark.png"}alt="Logo GitHub" />
                         </a>
-                        <a href="https://wa.link/yu6hn9" target="_blank">
-                            <p>WhatsApp</p>
+                        <a href="https://wa.link/yu6hn9" target="_blank" rel="noreferrer">
                             <img src={process.env.PUBLIC_URL + "assets/img/whatsapp-logo-dark.png"}alt="Logo WhatsApp" />
                         </a>
                 </nav>
+                <hr/>
                 <div>
                     <form onSubmit={mandarEmail} className="formEmail">
                         <label for="nome" id="label-nome">Nome</label>
@@ -67,7 +65,6 @@ function Contatos({menu, setBotaoMenuHamburguer, setMenu, setBotaoMenuX, menuMob
                             value={nome}
                             required
                         />
-
                         <label for="email" id="label-email">Email</label>
                         <input 
                             type="email" 
@@ -85,7 +82,6 @@ function Contatos({menu, setBotaoMenuHamburguer, setMenu, setBotaoMenuX, menuMob
                             value={mensagem}
                             required
                         ></textarea>
-
                         <button type="submit" className="btn-enviar">Enviar</button>
                     </form>
                 </div>
