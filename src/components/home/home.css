@@ -323,29 +323,8 @@
 
 @media (max-width: 750px){
     
-    .sobre{
-        width: 100%;
-        height: 600px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        background-image: url(../../../public/assets/img/background-home.jpg);
-        background-position: center;
-        background-size: cover;
-        gap: 5px;
-        padding: 50px 0px;
-    }
-    
     .card-sobre{
-        background-color: #f0f8ff17;
-        backdrop-filter: blur(5px);
-        margin-top: 30px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
         flex-direction: column-reverse;
-        align-items: center;
         animation: none;
     }
     
@@ -419,14 +398,6 @@
 @media (max-width: 700px){
 
     .card-sobre{
-        background-color: #f0f8ff17;
-        backdrop-filter: blur(5px);
-        margin-top: 20px;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-        align-items: center;
         width: 85%;
         height: 700px;
         animation: none;
@@ -434,13 +405,13 @@
 
     .projeto-destaque{
         width: 100%;
-        height: 950px;
+        height: 1200px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         background-image: linear-gradient(to top, rgb(34, 34, 34), #121315);
-        padding: 75px 0px 10px 0px;
+        padding: 75px 0 0 0;
     }
 
     .pd{
@@ -468,8 +439,9 @@
     }
 
     .area-contatos{
+        margin: 180px 0 0 0;
         height: 350px;
-        padding: 250px 0 75px 0;
+        padding: 50px 0 100px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
