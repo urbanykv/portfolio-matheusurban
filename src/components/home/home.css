@@ -414,10 +414,15 @@
         padding: 75px 0 0 0;
     }
 
+    #tituloPD{
+        animation: none;
+    }
+
     .pd{
         justify-content: start;
         align-items: center;
         flex-direction: column;
+        animation: none;
     }
 
     .apresentacao{
