@@ -431,7 +431,7 @@
         align-items: center;
         width: 85%;
         height: 80vh;
-        animation: animacao-home both 2s ease;
+        animation: none;
     }
 
     .projeto-destaque{
