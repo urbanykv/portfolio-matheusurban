@@ -6,10 +6,11 @@ export const tecnologias = [
     {id: 2,nome: 'CSS', icon: 'assets/icons/css.png'},
     {id: 3,nome: 'JavaScript', icon: 'assets/icons/javascript.png'},
     {id: 4,nome: 'React.js', icon: 'assets/icons/react.png'},
-    {id: 5,nome: '.NET(C#)', icon: 'assets/icons/csharp.png'},
+    {id: 5,nome: 'Styled Components', icon: 'assets/icons/styled-components.svg'},
+    {id: 6,nome: '.NET(C#)', icon: 'assets/icons/csharp.png'},
 ]
 
-const [html, css, javascript, react] = tecnologias;
+const [html, css, javascript, react, styledComponents, csharp] = tecnologias;
 
 export const projetosDev = [
 
@@ -19,7 +20,7 @@ export const projetosDev = [
 
     {id: 3, nome: "Urban's Ristorante", descricao: 'Cardápio Digital', tecnologias: [css, javascript, react], image: 'assets/img/urban-ristorante-bg.jpg',
     imageDestaque: 'assets/img/urban-ristorante.png',
-        github: 'https://github.com/urbanykv/urban-ristorante', demo: 'https://urban-ristorante.vercel.app/'},
+    github: 'https://github.com/urbanykv/urban-ristorante', demo: 'https://urban-ristorante.vercel.app/'},
 
     {id: 4, nome: 'Consultar CEP', descricao: 'Aplicação que procura informações do CEP desejado.', tecnologias: [html, css, javascript], image: 'assets/img/consultar-cep-bg.jpg', github: 'https://github.com/urbanykv/consultar-cep', demo: 'https://consultar-cep-omega.vercel.app/'},
 ]
