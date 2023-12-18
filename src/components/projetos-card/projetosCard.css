@@ -8,6 +8,12 @@
     flex-direction: column;
     border: 1px solid rgba(177, 177, 177, 0.295);
     position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    border: 1px solid #fdfdfd99;
 }
 
 .card > img{
@@ -15,6 +21,7 @@
     width: 100%;
     border-radius: 15px 15px 0 0;
     transition: 0.5s ease;
+    overflow: hidden;
 }
 
 #tituloCard{
