@@ -89,7 +89,6 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevPrincipal.contribuintes.map(contribuinte => (
                                     <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
                                         <img src={contribuinte.imagem} alt={contribuinte.nome}/>
-                                        <span>{contribuinte.nome}</span>
                                     </a>
                                 ))}
                             </div>}
@@ -116,7 +115,6 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevSecundario.contribuintes.map(contribuinte => (
                                     <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
                                         <img src={contribuinte.imagem} alt={contribuinte.nome}/>
-                                        <span>{contribuinte.nome}</span>
                                     </a>
                                 ))}
                             </div>}

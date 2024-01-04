@@ -35,7 +35,7 @@ const [Lucelho, Wyl, Thiago, Joao, Mateus] = contributors;
 
 export const projetosDev = [
 
-    {id: 1, nome: 'Comunidade Developers', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/tynb5MXaPW', contribuintes: [Lucelho, Wyl, Thiago, Joao, Mateus]},
+    {id: 1, nome: 'Comunidade Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/tynb5MXaPW', contribuintes: [Lucelho, Wyl, Thiago, Joao, Mateus]},
 
     {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de tênis raros e luxuosos.', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-store-bg.jpg', github: 'https://github.com/urbanykv/urban-store', demo: 'https://urban-store-coral.vercel.app/', contribuintes: null},
 
@@ -73,7 +73,6 @@ export const CardProjetos = () => {
                         {projeto.contribuintes?.map(contribuinte => (
                             <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
                                 <img src={contribuinte.imagem} alt={contribuinte.nome}/>
-                                <span>{contribuinte.nome}</span>
                             </a>
                         ))}
                     </div>}
