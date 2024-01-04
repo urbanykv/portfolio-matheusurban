@@ -35,7 +35,7 @@ const [Lucelho, Wyl, Thiago, Joao, Mateus] = contributors;
 
 export const projetosDev = [
 
-    {id: 1, nome: 'Comunidade Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/tynb5MXaPW', contribuintes: [Lucelho, Wyl, Thiago, Joao, Mateus]},
+    {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/tynb5MXaPW', contribuintes: [Lucelho, Wyl, Thiago, Joao, Mateus]},
 
     {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de tênis raros e luxuosos.', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-store-bg.jpg', github: 'https://github.com/urbanykv/urban-store', demo: 'https://urban-store-coral.vercel.app/', contribuintes: null},
 
@@ -43,7 +43,7 @@ export const projetosDev = [
 
     {id: 4, nome: 'Wiki de Repositórios GitHub', descricao: 'App consome API do GitHub para buscar as informações do perfil desejado.', tecnologias: [javascript, react, styledComponents], image: 'assets/img/wiki-repo-bg.jpg', github: 'https://github.com/urbanykv/wiki-repositorios', demo: 'https://wiki-repositorios-mu.vercel.app/', contribuintes: null},
 
-    {id: 5, nome: "Urban's Ristorante", descricao: 'Cardápio Digital', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-ristorante-bg.jpg',
+    {id: 5, nome: "Urban's Ristorante", descricao: 'Cardápio Digital de um restaurante fictício.', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-ristorante-bg.jpg',
     imageDestaque: 'assets/img/urban-ristorante.png',
     github: 'https://github.com/urbanykv/urban-ristorante', demo: 'https://urban-ristorante.vercel.app/', contribuintes: null},
 

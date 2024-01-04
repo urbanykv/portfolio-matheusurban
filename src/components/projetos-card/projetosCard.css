@@ -1,6 +1,6 @@
 .card{
     width: 325px;
-    min-height: 375px;
+    min-height: 380px;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -64,7 +64,7 @@
 .desc{
     padding: 3px 0px;
     width: 80%;
-    height: 40px;
+    height: 45px;
     color: rgb(218, 218, 218);
     transition: 0.5s ease;  
     margin: 7px 0px 0px 20px;
@@ -157,7 +157,7 @@
 @media (max-width: 850px){
     .card{
         width: 250px;
-        height: 330px;
+        min-height: 330px;
         background-size: cover;
         background-position: center;
         border-radius: 15px;
@@ -166,12 +166,16 @@
         border: 1px solid rgba(177, 177, 177, 0.295);
         position: relative;
     }
+
+    #tituloCard{
+        font-size: 17px;
+    }
     
     .desc{
-        font-size: 15px;
+        font-size: 13.5px;
         padding: 3px 0px;
         width: 80%;
-        height: 40px;
+        min-height: 50px;
         color: rgb(218, 218, 218);
         transition: 0.5s ease;  
         margin: 0px 0px 5px 20px;

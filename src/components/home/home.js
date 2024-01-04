@@ -82,7 +82,7 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevPrincipal.demo === null ? null : 
                                 <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>}
                             </div>
-                            {projetoDevPrincipal.contribuintes === null ? null: 
+                            {projetoDevPrincipal.contribuintes === null ? null : 
                             <div className="contributors">
                                 <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
                                 <hr/>
