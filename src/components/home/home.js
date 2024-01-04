@@ -121,15 +121,15 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                         </div>
                     }
                 </div>
-                <div className="area-contatos">
-                    <hr/>
-                    <div className="card-contatos">
-                        <h1>Vamos desenvolver algo juntos!</h1>
-                        <p>Caso você tenha gostado do que viu e agora está interessado(a) em saber mais sobre mim e meu trabalho, vamos trocar uma ideia.</p>
-                        <Link to="/contatos" id="btn-contateme" onClick={iniciarNoTopo}>Entre em contato.</Link>
-                    </div>
-                </div>
             </section>
+            <div className="area-contatos">
+                <hr/>
+                <div className="card-contatos">
+                    <h1>Vamos desenvolver algo juntos!</h1>
+                    <p>Caso você tenha gostado do que viu e agora está interessado(a) em saber mais sobre mim e meu trabalho, vamos trocar uma ideia.</p>
+                    <Link to="/contatos" id="btn-contateme" onClick={iniciarNoTopo}>Entre em contato.</Link>
+                </div>
+            </div>
         </div>
     )
 }

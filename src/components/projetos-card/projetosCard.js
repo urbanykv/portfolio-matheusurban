@@ -41,11 +41,14 @@ export const projetosDev = [
 
     {id: 3, nome: 'Detone o Ralph', descricao: 'Jogo do Detona Ralph estilo "Whac-A-Mole".', tecnologias: [html, css, javascript, photoshop], image: 'assets/img/detona-ralph-bg.jpg', github: 'https://github.com/urbanykv/jogo-detona-ralph', demo: 'https://jogo-detona-ralph-one.vercel.app/', contribuintes: null},
 
-    {id: 4, nome: "Urban's Ristorante", descricao: 'Cardápio Digital', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-ristorante-bg.jpg',
+    {id: 4, nome: 'Wiki de Repositórios GitHub', descricao: 'App consome API do GitHub para buscar as informações do perfil desejado.', tecnologias: [javascript, react, styledComponents], image: 'assets/img/wiki-repo-bg.jpg', github: 'https://github.com/urbanykv/wiki-repositorios', demo: 'https://wiki-repositorios-mu.vercel.app/', contribuintes: null},
+
+    {id: 5, nome: "Urban's Ristorante", descricao: 'Cardápio Digital', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-ristorante-bg.jpg',
     imageDestaque: 'assets/img/urban-ristorante.png',
     github: 'https://github.com/urbanykv/urban-ristorante', demo: 'https://urban-ristorante.vercel.app/', contribuintes: null},
 
-    {id: 5, nome: 'Consultar CEP', descricao: 'Aplicação que procura informações do CEP desejado.', tecnologias: [html, css, javascript], image: 'assets/img/consultar-cep-bg.jpg', github: 'https://github.com/urbanykv/consultar-cep', demo: 'https://consultar-cep-omega.vercel.app/', contribuintes: null},
+    {id: 6, nome: 'Consultar CEP', descricao: 'Aplicação que consome API de CEP no intuito de achar a rua desejada.', tecnologias: [html, css, javascript], image: 'assets/img/consultar-cep-bg.jpg', github: 'https://github.com/urbanykv/consultar-cep', demo: 'https://consultar-cep-omega.vercel.app/', contribuintes: null}
+    
 ]
 
 export const CardProjetos = () => {

@@ -199,7 +199,8 @@
 
 .projeto-destaque{
     width: 100%;
-    height: 85vh;
+    min-height: 85vh;
+    max-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,8 +208,6 @@
     background-image: linear-gradient(to top, rgb(34, 34, 34), #121315);
     padding: 75px 0px 10px 0px;
 }
-
-
 
 #tituloPD{
     justify-self: start;
@@ -229,7 +228,6 @@
 .pd{
     display: flex;
     width: 100%;
-    height: 80vh;
     padding-top: 15px;
     margin-top: 15px;
     justify-content: center;
@@ -239,10 +237,10 @@
 }
 
 .area-contatos{
-    padding: 25px 0 75px 0;
+    padding: 0 0 75px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -399,13 +397,13 @@
 
     .card-sobre{
         width: 85%;
-        height: 700px;
+        max-height: 700px;
         animation: none;
     }
 
     .projeto-destaque{
         width: 100%;
-        height: 1200px;
+        min-height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -444,12 +442,12 @@
     }
 
     .area-contatos{
-        margin: 180px 0 0 0;
+        margin: 15px 0 0 0;
         height: 350px;
         padding: 50px 0 100px 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 }
