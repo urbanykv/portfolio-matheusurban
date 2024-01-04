@@ -77,9 +77,22 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevPrincipal.tecnologias.map(tec => <img className="tecs-projetos" src={tec.icon} alt={tec.nome} key={tec.id}/>)}
                             </div>
                             <div className="btns">
-                                <a href={projetoDevPrincipal.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>
-                                <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>
+                                {projetoDevPrincipal.github === null ? null : 
+                                <a href={projetoDevPrincipal.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>}
+                                {projetoDevPrincipal.demo === null ? null : 
+                                <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>}
                             </div>
+                            {projetoDevPrincipal.contribuintes === null ? null: 
+                            <div className="contributors">
+                                <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                <hr/>
+                                {projetoDevPrincipal.contribuintes.map(contribuinte => (
+                                    <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
+                                        <img src={contribuinte.imagem} alt={contribuinte.nome}/>
+                                        <span>{contribuinte.nome}</span>
+                                    </a>
+                                ))}
+                            </div>}
                         </div>
                     }
                     {
@@ -91,9 +104,22 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevSecundario.tecnologias.map(tec => <img className="tecs-projetos" src={tec.icon} alt={tec.nome} key={tec.id}/>)}
                             </div>
                             <div className="btns">
-                                <a href={projetoDevSecundario.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>
-                                <a href={projetoDevSecundario.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>
+                                {projetoDevSecundario.github === null ? null : 
+                                <a href={projetoDevSecundario.github} target="__blank" className="btn-projetos" id="repo">Repositório</a>}
+                                {projetoDevSecundario.demo === null ? null : 
+                                <a href={projetoDevSecundario.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>}
                             </div>
+                            {projetoDevSecundario.contribuintes === null ? null: 
+                            <div className="contributors">
+                                <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                <hr/>
+                                {projetoDevSecundario.contribuintes.map(contribuinte => (
+                                    <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
+                                        <img src={contribuinte.imagem} alt={contribuinte.nome}/>
+                                        <span>{contribuinte.nome}</span>
+                                    </a>
+                                ))}
+                            </div>}
                         </div>
                     }
                 </div>
