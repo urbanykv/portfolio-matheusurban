@@ -99,7 +99,7 @@
     top: 7px;
     width: 45px;
     height: 45px;
-    border-radius: 25px;
+    border-radius: 15px;
     display: flex;
     justify-content: flex-start;
     gap: 12px;
@@ -113,32 +113,86 @@
 }
 
 .contributors:hover{
-    height: 260px;
+    width: 310px;
+    height: 280px;
+}
+
+.lista-de-contribuidores{
+    width: 95%;
+    padding: 10px 0;
+    max-height: 175px;
+    border-radius: 10px 0 0 10px;
+    gap: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: #85858525;
+}
+
+.lista-de-contribuidores::-webkit-scrollbar, 
+.lista-de-contribuidores::-webkit-scrollbar-thumb{
+    border-radius: 0 10px 10px 0;
 }
 
 .btn-contributors{
-    background-image: url("../../../public//assets/img/linkedin-logo-dark.png");
-    background-position: center;
-    background-size: 15px;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    width: 27px;
-    height: 27px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 260px;
+    min-height: 55px;
     display: flex;
-    flex-direction: row-reverse;    text-decoration-line: none;
-    gap: 5px;
-
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;    
+    text-decoration-line: none;
+    gap: 10px;
+    background-color: #4e4e4e;
 }
 
-.btn-contributors:hover img{
-    opacity: 25%;
+.info-contribuidores{
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-contribuidores{
+    color: rgb(218, 218, 218);
+}
+
+.funcao-contribuidores{
+    color: rgba(218, 218, 218, 0.589);
+    font-style: italic;
+    font-size: 15px;
+}
+
+.btn-contributors:hover{
+    background-color: #5a5a5a;
     transition: 0.3s ease-in-out;
+}
+
+.contributors:hover .info-btn{
+    margin: 10px 0 0 0;
+}
+
+.contributors:hover .info-btn > span{
+    display: inline;
 }
 
 .contributors hr{
     background-color: #858585;
     height: 1px;
     width: 75%;
+}
+
+.info-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contribuidores-btn-span{
+    color: #fff;
+    display: none;
 }
 
 .open-btn-contributors{
@@ -149,8 +203,8 @@
 }
 
 .btn-contributors img{
-    width: 28px;
-    height: 28px;    
+    width: 45px;
+    height: 45px;    
     border-radius: 50%;
 }
 
@@ -179,5 +233,22 @@
         color: rgb(218, 218, 218);
         transition: 0.5s ease;  
         margin: 0px 0px 5px 20px;
+    }
+    
+    .contributors:hover{
+        width: 235px;
+        height: 280px;
+    }
+    .btn-contributors{
+        width: 180px;
+        min-height: 45px;
+    }
+
+    .nome-contribuidores{
+        font-size: 15px;
+    }
+    
+    .funcao-contribuidores{
+        font-size: 13.5px;
     }
 }

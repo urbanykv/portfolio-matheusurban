@@ -82,15 +82,24 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevPrincipal.demo === null ? null : 
                                 <a href={projetoDevPrincipal.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>}
                             </div>
-                            {projetoDevPrincipal.contribuintes === null ? null : 
+                            {projetoDevPrincipal.contribuidores === null ? null: 
                             <div className="contributors">
-                                <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                    <div className="info-btn">
+                                        <span className="contribuidores-btn-span">Contribuidores</span>
+                                        <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                    </div>
                                 <hr/>
-                                {projetoDevPrincipal.contribuintes.map(contribuinte => (
-                                    <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
-                                        <img src={contribuinte.imagem} alt={contribuinte.nome}/>
-                                    </a>
-                                ))}
+                                <div className="lista-de-contribuidores">
+                                    {projetoDevPrincipal.contribuidores?.map(contribuidores => (
+                                        <a className="btn-contributors" href={contribuidores.linkedin} target="_blank" key={contribuidores.id}>
+                                            <div className="info-contribuidores">
+                                                <span className="nome-contribuidores">{contribuidores.nome}</span>
+                                                <span className="funcao-contribuidores">{contribuidores.cargo}</span>
+                                            </div>
+                                            <img src={contribuidores.imagem} alt={contribuidores.nome}/>
+                                        </a>
+                                    ))}
+                                </div>
                             </div>}
                         </div>
                     }
@@ -108,15 +117,24 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                 {projetoDevSecundario.demo === null ? null : 
                                 <a href={projetoDevSecundario.demo} target="__blank" className="btn-projetos" id="demo">Acessar</a>}
                             </div>
-                            {projetoDevSecundario.contribuintes === null ? null: 
+                            {projetoDevSecundario.contribuidores === null ? null: 
                             <div className="contributors">
-                                <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                    <div className="info-btn">
+                                        <span className="contribuidores-btn-span">Contribuidores</span>
+                                        <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                    </div>
                                 <hr/>
-                                {projetoDevSecundario.contribuintes.map(contribuinte => (
-                                    <a className="btn-contributors" href={contribuinte.linkedin} target="_blank" key={contribuinte.id}>
-                                        <img src={contribuinte.imagem} alt={contribuinte.nome}/>
-                                    </a>
-                                ))}
+                                <div className="lista-de-contribuidores">
+                                    {projetoDevSecundario.contribuidores?.map(contribuidores => (
+                                        <a className="btn-contributors" href={contribuidores.linkedin} target="_blank" key={contribuidores.id}>
+                                            <div className="info-contribuidores">
+                                                <span className="nome-contribuidores">{contribuidores.nome}</span>
+                                                <span className="funcao-contribuidores">{contribuidores.cargo}</span>
+                                            </div>
+                                            <img src={contribuidores.imagem} alt={contribuidores.nome}/>
+                                        </a>
+                                    ))}
+                                </div>
                             </div>}
                         </div>
                     }
