@@ -44,12 +44,8 @@
 .tecs-projetos{
     max-width: 27px;
     object-fit: cover;
-    filter: grayscale(80%);
+    filter: grayscale(15%);
     transition: 0.5s ease;
-}
-
-.tecs-projetos:hover{
-    filter: grayscale(0);
 }
 
 .btns{

@@ -41,7 +41,7 @@ const [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri] = contributors;
 
 export const projetosDev = [
 
-    {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [javascript,  react, styledComponents, photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/tynb5MXaPW', contribuidores: [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri]},
+    {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [javascript,  react, styledComponents, photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/comunidade-developers', contribuidores: [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri]},
 
     {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de tênis raros e luxuosos.', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-store-bg.jpg', github: 'https://github.com/urbanykv/urban-store', demo: 'https://urban-store-coral.vercel.app/', contribuidores: null},
 
