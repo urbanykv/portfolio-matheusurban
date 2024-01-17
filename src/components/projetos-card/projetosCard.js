@@ -79,12 +79,12 @@ export const CardProjetos = () => {
                     <div className="contributors">
                             <div className="info-btn">
                                 <span className="contribuidores-btn-span">Contribuidores</span>
-                                <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                <img src="assets/img/contributors.svg" className="open-btn-contributors" alt="img contributors"/>
                             </div>
                         <hr/>
                         <div className="lista-de-contribuidores">
                             {projeto.contribuidores?.map(contribuidores => (
-                                <a className="btn-contributors" href={contribuidores.linkedin} target="_blank" key={contribuidores.id}>
+                                <a className="btn-contributors" href={contribuidores.linkedin} rel="noreferrer" target="_blank" key={contribuidores.id}>
                                     <div className="info-contribuidores">
                                         <span className="nome-contribuidores">{contribuidores.nome}</span>
                                         <span className="funcao-contribuidores">{contribuidores.cargo}</span>
