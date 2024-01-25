@@ -40,7 +40,7 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                     <span>Desenvolvedor MES na Metalsa</span>
                                 </div>
                             </div>
-                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor Front-end.</p>
+                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor de Software.</p>
                             <p>Desenvolvimento de Software é a minha paixão, ver as linhas de códigos darem vida a um projeto é algo que me motiva a buscar cada vez mais a melhor versão de Desenvolvedor que existe em mim.</p>
                             <hr/>
                             <article className="skills">
