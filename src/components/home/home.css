@@ -109,7 +109,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .infos-sobremim div{
@@ -125,6 +125,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.loc-n-exp{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+}
+
+.loc{
+  justify-self: start;
+  align-self: start;
 }
 
 .texto-tec{

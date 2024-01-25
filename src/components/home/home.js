@@ -32,9 +32,12 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                         <article className="apresentacao">
                             <div className="infos-sobremim">
                                 <h1>Matheus Urban</h1>
-                                <div>
-                                    <img src={process.env.PUBLIC_URL + "assets/icons/world.svg"} alt="world"/>
-                                    <span>Osasco, São Paulo</span>
+                                <div className="loc-n-exp">
+                                    <div className="loc">
+                                        <img src={process.env.PUBLIC_URL + "assets/icons/world.svg"} alt="world"/>
+                                        <span>Osasco, São Paulo</span>
+                                    </div>
+                                    <span>Desenvolvedor MES na Metalsa</span>
                                 </div>
                             </div>
                             <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor Front-end.</p>

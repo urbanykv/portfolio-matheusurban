@@ -3,7 +3,7 @@ import './projetosCard.css'
 
 const imagemLucelho = 'https://media.licdn.com/dms/image/D4D03AQH74s4DHNN8jw/profile-displayphoto-shrink_200_200/0/1691596939986?e=1709769600&v=beta&t=H_Bfhe48PK4-KpedlwWvUZf1nLoWkk3hkVDHN0krBTE';
 
-const imagemWylkerson = 'https://media.licdn.com/dms/image/D4E35AQHS9t7V5AZ-cA/profile-framedphoto-shrink_200_200/0/1675182551590?e=1704996000&v=beta&t=-rVK7KmkffTBZ2lj7fQjacbIORoTiYXoQNVAyLD4-ss';
+const imagemWylkerson = 'https://media.licdn.com/dms/image/D4E35AQHS9t7V5AZ-cA/profile-framedphoto-shrink_200_200/0/1675182551590?e=1706767200&v=beta&t=VeuhRcoA9ibxx69r5BVwHTXB5QsvPE5OsHevWo1tlWU';
 
 const imagemThiago =  'https://media.licdn.com/dms/image/D4D03AQE0RiTl72GSfg/profile-displayphoto-shrink_200_200/0/1696467158903?e=1709769600&v=beta&t=3bql4UJUYsFbCoNBfeboLysyyjyk0s8sT9vaEWXHlE4';
 
@@ -13,7 +13,9 @@ const imagemMateus = 'https://media.licdn.com/dms/image/C4D03AQE7FimzS06L4g/prof
 
 const imagemGustavo = 'https://media.licdn.com/dms/image/D4D03AQF788gOyVLNuQ/profile-displayphoto-shrink_200_200/0/1691001835464?e=1710374400&v=beta&t=PWEv8t6cWRVowRd24QgEJW9j72bAj9p80rc8dm0Afq8';
 
-const imagemPri = 'https://media.licdn.com/dms/image/D4D35AQFvcQQ3LWnvRw/profile-framedphoto-shrink_200_200/0/1698245660485?e=1705208400&v=beta&t=izSjK3o9F1t-r6m_OaO2EAeEXvLKoHoCGyLak1Qick8';
+const imagemPri = 'https://media.licdn.com/dms/image/D4D35AQFvcQQ3LWnvRw/profile-framedphoto-shrink_200_200/0/1698245660485?e=1706767200&v=beta&t=93gqLnokIy0MnW8e9VYxlaObPJAHgpPD2Dz-mx4Irxg';
+
+const imagemUrban = 'https://media.licdn.com/dms/image/D4D03AQGpRfKJ1hs5cA/profile-displayphoto-shrink_200_200/0/1692417802187?e=1711584000&v=beta&t=3ELND0AnFa3_1ILjtbfEphZ-ue7l31wmXIvp_sFohTo'
 
 export const tecnologias = [
     {id: 1,nome: 'HTML', icon: 'assets/icons/html.png'},
@@ -35,13 +37,14 @@ export const contributors = [
     {id: 5, nome: 'Gustavo Archein', cargo: 'CMO', linkedin: 'https://www.linkedin.com/in/oarchein/', imagem: imagemGustavo},
     {id: 6, nome: 'João Vitor', cargo: 'CHRO', linkedin: 'https://www.linkedin.com/in/jo%C3%A3o-vitor-silva-23191520a/', imagem: imagemJoao},
     {id: 7, nome: 'Priscilla Trevizan', cargo: 'Gestora de Equipes', linkedin: 'https://www.linkedin.com/in/priscillatrevizan/', imagem: imagemPri},
+    {id: 8, nome: 'Matheus Urban (Eu)', cargo: 'Tech Lead Front-end', linkedin: 'https://www.linkedin.com/in/urbanykv/', imagem: imagemUrban},
 ]
 
-const [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri] = contributors;
+const [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri, Urban] = contributors;
 
 export const projetosDev = [
 
-    {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [javascript,  react, styledComponents, photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/comunidade-developers', contribuidores: [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri]},
+    {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [javascript,  react, styledComponents, photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/comunidade-developers', contribuidores: [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri, Urban]},
 
     {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de tênis raros e luxuosos.', tecnologias: [css, javascript, react, photoshop], image: 'assets/img/urban-store-bg.jpg', github: 'https://github.com/urbanykv/urban-store', demo: 'https://urban-store-coral.vercel.app/', contribuidores: null},
 
