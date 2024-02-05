@@ -32,15 +32,12 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                         <article className="apresentacao">
                             <div className="infos-sobremim">
                                 <h1>Matheus Urban</h1>
-                                <div className="loc-n-exp">
-                                    <div className="loc">
-                                        <img src={process.env.PUBLIC_URL + "assets/icons/world.svg"} alt="world"/>
-                                        <span>Osasco, São Paulo</span>
-                                    </div>
-                                    <span>Desenvolvedor MES na Metalsa</span>
+                                <div>
+                                    <img src={process.env.PUBLIC_URL + "assets/icons/world.svg"} alt="world"/>
+                                    <span>Osasco, São Paulo</span>
                                 </div>
                             </div>
-                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor de Software.</p>
+                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor Front-end.</p>
                             <p>Desenvolvimento de Software é a minha paixão, ver as linhas de códigos darem vida a um projeto é algo que me motiva a buscar cada vez mais a melhor versão de Desenvolvedor que existe em mim.</p>
                             <hr/>
                             <article className="skills">
