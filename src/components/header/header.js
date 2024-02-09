@@ -14,12 +14,12 @@ function Header({menu,  botaoMenuHamburguer, botaoMenuX, setBotaoMenuHamburguer,
     menuMobileOnOff = () => {
         if(menu === 'menuOff'){
             setMenu('menuOn');
-            setBotaoMenuHamburguer('menuOff')
-            setBotaoMenuX('menuOn')
+            setBotaoMenuHamburguer('menuOff');
+            setBotaoMenuX('menuOn');
         }else{
-            setMenu('menuOff')
-            setBotaoMenuHamburguer('menuOn')
-            setBotaoMenuX('menuOff')
+            setMenu('menuOff');
+            setBotaoMenuHamburguer('menuOn');
+            setBotaoMenuX('menuOff');
         }
     }
 
