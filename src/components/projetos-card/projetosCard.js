@@ -54,7 +54,7 @@ export const projetosDev = [
 
     {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [javascript,  react, styledComponents, photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/comunidade-developers', contribuidores: [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri, Eu, Pietro, Kaian]},
 
-    {id: 2, nome: 'Urban Store', descricao: 'Este projeto está em Desenvolvimento.', tecnologias: [typescript, react, styledComponents, photoshop, csharp, sqlServer], image: 'assets/img/urban-store-bg.jpg', github: 'https://github.com/urbanykv/urban-store', demo: null, contribuidores: null},
+    {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de Produtos Tecnológicos.', tecnologias: [typescript, react, styledComponents, photoshop, csharp, sqlServer], image: 'assets/img/projeto-em-desenvolvimento.jpg', github: 'https://github.com/urbanykv/urban-store', demo: null, contribuidores: null},
 
     {id: 3, nome: 'Detone o Ralph', descricao: 'Jogo do Detona Ralph estilo "Whac-A-Mole".', tecnologias: [html, css, javascript, photoshop], image: 'assets/img/detona-ralph-bg.jpg', github: 'https://github.com/urbanykv/jogo-detona-ralph', demo: 'https://jogo-detona-ralph-one.vercel.app/', contribuidores: null},
 
