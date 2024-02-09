@@ -109,7 +109,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: rgba(218, 218, 218, 0.74);
     align-items: start;
+}
+
+.infos-sobremim a{
+    color: rgba(255, 116, 116, 0.74);
+    transition: 0.2s ease;
+}
+
+.infos-sobremim a:hover{
+  color: rgba(218, 218, 218, 0.74);
+  text-decoration: none;
 }
 
 .infos-sobremim div{
@@ -117,7 +128,6 @@
     justify-content: start;
     align-items: center;
     gap: 3px;
-    color: rgba(218, 218, 218, 0.74);
 }
 
 .infos-sobremim > div > img{

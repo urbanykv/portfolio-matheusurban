@@ -36,8 +36,9 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                                     <img src={process.env.PUBLIC_URL + "assets/icons/world.svg"} alt="world"/>
                                     <span>Osasco, São Paulo</span>
                                 </div>
+                                <span>Desenvolvedor MES na <a href="https://www.linkedin.com/company/metalsacompany/" target="_blank" rel="noreferrer">Metalsa.</a></span>
                             </div>
-                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor Front-end.</p>
+                            <p>Oi, eu sou o Matheus Urban, estou cursando Engenharia de Software e sou Desenvolvedor Full Stack.</p>
                             <p>Desenvolvimento de Software é a minha paixão, ver as linhas de códigos darem vida a um projeto é algo que me motiva a buscar cada vez mais a melhor versão de Desenvolvedor que existe em mim.</p>
                             <hr/>
                             <article className="skills">
@@ -86,12 +87,12 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                             <div className="contributors">
                                     <div className="info-btn">
                                         <span className="contribuidores-btn-span">Contribuidores</span>
-                                        <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                        <img src="assets/img/contributors.svg" alt="contributors-primary" className="open-btn-contributors"/>
                                     </div>
                                 <hr/>
                                 <div className="lista-de-contribuidores">
                                     {projetoDevPrincipal.contribuidores?.map(contribuidores => (
-                                        <a className="btn-contributors" href={contribuidores.linkedin} target="_blank" key={contribuidores.id}>
+                                        <a className="btn-contributors" href={contribuidores.linkedin} rel="noreferrer" target="_blank" key={contribuidores.id}>
                                             <div className="info-contribuidores">
                                                 <span className="nome-contribuidores">{contribuidores.nome}</span>
                                                 <span className="funcao-contribuidores">{contribuidores.cargo}</span>
@@ -121,12 +122,12 @@ function Home({menuMobileOnOff, menu, setMenu, setBotaoMenuHamburguer, setBotaoM
                             <div className="contributors">
                                     <div className="info-btn">
                                         <span className="contribuidores-btn-span">Contribuidores</span>
-                                        <img src="assets/img/contributors.svg" className="open-btn-contributors"/>
+                                        <img src="assets/img/contributors.svg" alt="contributors" className="open-btn-contributors"/>
                                     </div>
                                 <hr/>
                                 <div className="lista-de-contribuidores">
                                     {projetoDevSecundario.contribuidores?.map(contribuidores => (
-                                        <a className="btn-contributors" href={contribuidores.linkedin} target="_blank" key={contribuidores.id}>
+                                        <a className="btn-contributors" href={contribuidores.linkedin} rel="noreferrer" target="_blank" key={contribuidores.id}>
                                             <div className="info-contribuidores">
                                                 <span className="nome-contribuidores">{contribuidores.nome}</span>
                                                 <span className="funcao-contribuidores">{contribuidores.cargo}</span>
