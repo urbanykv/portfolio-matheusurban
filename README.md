@@ -1,37 +1,42 @@
 # Olá, eu sou o Matheus Urban. ✌
 
-[![Capa Matheus Urban](https://media.licdn.com/dms/image/D4D16AQFMzXH2ovtgXg/profile-displaybackgroundimage-shrink_350_1400/0/1702493162920?e=1707955200&v=beta&t=p9oAAuOeUGq1Ats9Jk4DYHqc07lF-VH52Rqy7VjYZj4)](https://www.linkedin.com/in/urbanykv/)
+[![Capa Matheus Urban](https://media.licdn.com/dms/image/D4D16AQEX3fokRNwUjg/profile-displaybackgroundimage-shrink_350_1400/0/1707420435814?e=1712793600&v=beta&t=VLUPhFtbu_pIk31OZXYAKbAM2QIOCzW2c5jcvsVN0bI)](https://www.linkedin.com/in/urbanykv/)
 
 ### Sobre Mim
 ```javascript
 const sobre = {
     nome:"Matheus Urban",
-    cursando: 'engenharia de software',
-    linguagens: ['javascript', 'c#'],
-    frameworks_libs: ['react.js', 'styled components'],
-    design: ['adobe photoshop'],
-    interesses: ['design' 'front-end', 'back-end'],
+    cursando: 'Engenharia de Software',
+    linguagens: ['Javascript', 'Typescript', 'C#', 'SQL'],
+    frameworks_libs: ['React.js', 'Styled Components'],
+    design: ['Adobe Photoshop'],
+    interesses: ['Front-end', 'Back-end', 'Design'],
     desde: new Date('2023')
 }
 ```
 
-Estou sempre aprimorando meus conhecimentos e  
-sempre em busca de ser melhor que o meu eu de ontem.  
-Meu objetivo é ser Desenvolvedor Full Stack.
+Oi! Sou o Matheus Urban, desenvolvedor MES na [Metalsa](https://www.linkedin.com/company/metalsacompany/) e \
+voluntário como desenvolvedor front end na [Developers](https://discord.gg/developers-202147515766800384). \
+Amo tecnologia e estou sempre em busca de desafios criativos.
 
 ### Tecnologias e Softwares
 
-![JavaScript](https://skillicons.dev/icons?i=javascript) &nbsp;&nbsp;
+![Javascript](https://skillicons.dev/icons?i=javascript) &nbsp;&nbsp;
+![Typescript](https://skillicons.dev/icons?i=typescript) &nbsp;&nbsp;
 ![React.js](https://skillicons.dev/icons?i=react) &nbsp;&nbsp;
 ![Styled Components](https://skillicons.dev/icons?i=styledcomponents) &nbsp;&nbsp;
-![Adobe Photoshop](https://skillicons.dev/icons?i=photoshop)
+![.NET](https://skillicons.dev/icons?i=dotnet) &nbsp;&nbsp;
+![Adobe Photoshop](https://skillicons.dev/icons?i=photoshop) &nbsp;&nbsp;
+<img src="https://portfolio-matheusurban.vercel.app/assets/icons/sql-server.png" alt="SQL Server" width="48" height="48"/>
+
 
 ### Tecnologias que estou estudando
 
-![.NET](https://skillicons.dev/icons?i=dotnet) &nbsp;&nbsp;
 ![Node.js](https://skillicons.dev/icons?i=nodejs) &nbsp;&nbsp;
 ![Express.js](https://skillicons.dev/icons?i=express) &nbsp;&nbsp;
-![mySQL](https://skillicons.dev/icons?i=mysql)
+![Figma](https://skillicons.dev/icons?i=figma) &nbsp;&nbsp;
+![Illustrator](https://skillicons.dev/icons?i=illustrator) &nbsp;&nbsp;
+![MongoDB](https://skillicons.dev/icons?i=mongodb)
 
 ### Projetos Relevantes
 
