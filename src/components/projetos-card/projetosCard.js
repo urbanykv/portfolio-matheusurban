@@ -25,15 +25,17 @@ export const tecnologias = [
     {id: 1,nome: 'HTML', icon: 'assets/icons/html.png'},
     {id: 2,nome: 'CSS', icon: 'assets/icons/css.png'},
     {id: 3,nome: 'JavaScript', icon: 'assets/icons/javascript.png'},
-    {id: 4,nome: 'Typescript', icon: 'https://camo.githubusercontent.com/f470383a3e5e2cdf4e3872e62cb5a6f3c78de0d8deb5e5c5a9835976560e476f/68747470733a2f2f736b696c6c69636f6e732e6465762f69636f6e733f693d74797065736372697074'},
-    {id: 5,nome: 'React.js', icon: 'assets/icons/react.png'},
-    {id: 6,nome: 'Styled Components', icon: 'assets/icons/styled-components.svg'},
-    {id: 7,nome: '.NET(C#)', icon: 'assets/icons/csharp.png'},
-    {id: 8,nome: 'SQL Server', icon: 'assets/icons/sql-server.png'},
-    {id: 9,nome: 'Photoshop', icon: 'assets/icons/photoshop.png'},
+    {id: 4,nome: 'Typescript', icon: 'assets/icons/typescript.svg'},
+    {id: 5,nome: 'Node.js', icon: 'assets/icons/nodejs.svg'},
+    {id: 6,nome: 'React.js', icon: 'assets/icons/react.png'},
+    {id: 7,nome: 'Styled Components', icon: 'assets/icons/styled-components.svg'},
+    {id: 8,nome: '.NET(C#)', icon: 'assets/icons/csharp.png'},
+    {id: 9,nome: 'SQL Server', icon: 'assets/icons/sql-server.png'},
+    {id: 10,nome: 'MongoDB', icon: 'assets/icons/mongoDB.svg'},
+    {id: 11,nome: 'Photoshop', icon: 'assets/icons/photoshop.png'},
 ]
 
-const [html, css, javascript, typescript, react, styledComponents, csharp, sqlServer, photoshop] = tecnologias;
+const [html, css, javascript, typescript, nodejs, react, styledComponents, csharp, sqlServer, mongodb, photoshop] = tecnologias;
 
 export const contributors = [
     {id: 1, nome: 'Lucelho Silva', cargo: 'CEO', linkedin: 'https://www.linkedin.com/in/lucelho-silva-b17196239/', imagem: imagemLucelho},
@@ -54,7 +56,7 @@ export const projetosDev = [
 
     {id: 1, nome: 'Developers (Discord)', descricao: 'Comunidade de tecnológica dedicada ao seu crescimento, sem fins lucrativos.', tecnologias: [javascript,  react, styledComponents, photoshop], image: 'assets/img/developers-bg.jpg', github: null, demo: 'https://discord.com/invite/comunidade-developers', contribuidores: [Lucelho, Thiago, Wyl, Mateus, Gustavo, Joao, Pri, Eu, Pietro, Kaian]},
 
-    {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de Produtos Tecnológicos.', tecnologias: [typescript, react, styledComponents, photoshop, csharp, sqlServer], image: 'assets/img/projeto-em-desenvolvimento.jpg', github: 'https://github.com/urbanykv/urban-store', demo: null, contribuidores: null},
+    {id: 2, nome: 'Urban Store', descricao: 'Simulação de um e-commerce de Produtos Tecnológicos.', tecnologias: [typescript, react, styledComponents, nodejs, mongodb,photoshop], image: 'assets/img/projeto-em-desenvolvimento.jpg', github: 'https://github.com/urbanykv/urban-store', demo: null, contribuidores: null},
 
     {id: 3, nome: 'Detone o Ralph', descricao: 'Jogo do Detona Ralph estilo "Whac-A-Mole".', tecnologias: [html, css, javascript, photoshop], image: 'assets/img/detona-ralph-bg.jpg', github: 'https://github.com/urbanykv/jogo-detona-ralph', demo: 'https://jogo-detona-ralph-one.vercel.app/', contribuidores: null},
 

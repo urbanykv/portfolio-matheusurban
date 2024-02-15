@@ -116,6 +116,8 @@
 .infos-sobremim a{
     color: #ff0000;
     transition: 0.2s ease;
+    font-style: italic;
+    text-decoration: none;
 }
 
 .infos-sobremim a:hover{
